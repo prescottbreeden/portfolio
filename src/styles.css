@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-red-light: #FF6A4F;
+  --color-red-dark: #D50000;
+  --color-green-neon: #47fe47;
+  --color-green-light: #7ed56f;
+  --color-green-dark: #28b485;
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light: #eee;
+  --color-grey-dark: #777;
+  --color-grey-dark-3: #333;
+  --color-white: #f2f2f2;
+  --color-white-2: #ddd;
+  --color-black: #000;
+  --default-border-radius: 3px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 3rem;
+  margin-bottom: 6rem;
+  min-height: 100vh; }
+
+.container {
+  border-radius: 3px; }
+
+body {
+  font-weight: 400;
+  line-height: 1.6; }
+
+.u-color-purple {
+  color: purple; }
+
+.u-color-grey {
+  color: grey; }
+
+.form {
+  padding: 3rem; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__input {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: black;
+    border: none;
+    width: 100%; }
+    .form__input:focus {
+      outline: none;
+      background-color: black; }
+
+input,
+input[type="text"] {
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--color-green-neon);
+  caret-color: var(--color-green-neon);
+  background-color: black;
+  border: none;
+  width: 100%;
+  display: inline-block; }
+  input:focus,
+  input[type="text"]:focus {
+    outline: none;
+    background-color: black; }
+
+.terminal {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--color-green-neon); }
+  .terminal__window {
+    background-color: black;
+    min-height: 10rem;
+    width: 100%;
+    border: 1px dashed blue;
+    padding: 1rem; }
+  .terminal__text {
+    margin-bottom: .2rem; }
+  .terminal__input {
+    display: flex;
+    border: 1px dashed orangered;
+    width: 100%; }
+    .terminal__input---field {
+      display: inline-block;
+      font-size: inherit;
+      color: inherit;
+      font-style: inherit;
+      outline: none;
+      border: none;
+      background-color: var(--color-black); }
+    .terminal__input--prefix {
+      color: var(--color-green-neon);
+      flex: 0 0 26rem;
+      display: inline-block; }

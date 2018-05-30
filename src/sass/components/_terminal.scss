@@ -1,0 +1,42 @@
+.terminal {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-green-neon);
+
+    &__window {
+        background-color: black;
+        min-height: 10rem;
+        width: 100%;
+        border: 1px dashed blue;
+        padding: 1rem;
+    }
+
+    &__text {
+        margin-bottom: .2rem;
+    }
+
+    &__input {
+        display: flex;
+        border: 1px dashed orangered;
+        width: 100%;
+
+        &---field {
+            display: inline-block;
+            font-size: inherit;
+            color: inherit;
+            font-style: inherit;
+            outline: none;
+            border: none;
+
+            background-color: var(--color-black);
+        }
+
+        &--prefix {
+            color: var(--color-green-neon);
+            flex: 0 0 26rem;
+            display: inline-block;
+        }
+
+    }
+}
