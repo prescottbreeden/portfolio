@@ -3,12 +3,12 @@
     letter-spacing: 1px;
     font-family: 'Courier New', Courier, monospace;
     color: var(--color-green-neon);
+    background-color: black;
 
     &__window {
-        background-color: black;
         min-height: 10rem;
         width: 100%;
-        border: 1px dashed blue;
+        // border: 1px dashed blue;
         padding: 1rem;
     }
 
@@ -18,7 +18,7 @@
 
     &__input {
         display: flex;
-        border: 1px dashed orangered;
+        // border: 1px dashed orangered;
         width: 100%;
 
         &---field {
@@ -38,5 +38,9 @@
             display: inline-block;
         }
 
+    }
+
+    &__submit {
+        padding: 2rem;
     }
 }

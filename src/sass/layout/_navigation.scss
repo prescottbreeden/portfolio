@@ -1,0 +1,12 @@
+.navigation {
+    margin-bottom: 3rem;
+    &__help-menu {
+        display: flex;
+        justify-content: space-around;
+        border: 1px dashed var(--color-green-neon);
+
+        &--item {
+            margin: 2rem;
+        }
+    }
+}

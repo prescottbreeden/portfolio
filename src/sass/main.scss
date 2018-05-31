@@ -1,8 +1,8 @@
 //base
-@import 'base/_animations';
-@import 'base/_base';
 @import 'base/_mixins';
+@import 'base/_base';
 @import 'base/_typography';
+@import 'base/_animations';
 @import 'base/_utilities';
 
 //layout
@@ -12,5 +12,6 @@
 
 //components
 @import 'components/_btn';
+@import 'components/_cube';
 @import 'components/_form';
 @import 'components/_terminal';

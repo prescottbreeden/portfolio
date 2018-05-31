@@ -1,13 +1,49 @@
+<pre class="ascii-title">
+    ===========================================================================================================================  
+  |                                                                                                                         |
+  |    __________                                     __    __    __________                           .___                 |
+  |    \______   \_______   ____   ______ ____  _____/  |__/  |_  \______   \_______   ____   ____   __| _/____   ____      |
+  |     |     ___/\_  __ \_/ __ \ /  ___// ___\/  _ \   __\   __\  |    |  _/\_  __ \_/ __ \_/ __ \ / __ |/ __ \ /    \     |
+  |     |    |     |  | \/\  ___/ \___ \\  \__(  <_> )  |  |  |    |    |   \ |  | \/\  ___/\  ___// /_/ \  ___/|   |  \    |
+  |     |____|     |__|    \___  >____  >\___  >____/|__|  |__|    |______  / |__|    \___  >\___  >____ |\___  >___|  /    |
+  |                            \/     \/     \/                           \/              \/     \/     \/    \/     \/     |
+  |                                                                                                                         |
+  ===========================================================================================================================
+  </pre>
+
+<button class="btn" [routerLink]="['']">Home</button>
+<nav class="navigation">
+    <div class="navigation__help-menu">
+      <div class="navigation__help-menu--item">
+        help : list additional commands
+      </div>
+      <div class="navigation__help-menu--item">
+        ls : list projects
+      </div>
+      <div class="navigation__help-menu--item">
+        about : learn more about Prescott
+      </div>
+    </div>
+  </nav>
+
 <section class="terminal">
   <div class="terminal__window">
-    <div class="terminal__text">
-       <p><span class="u-color-purple">ℹ</span> <span class="u-color-grey">｢wdm｣</span>: Compiling...</p>
-       <p><span class="u-color-purple">ℹ</span> <span class="u-color-grey">｢wdm｣</span>: Compiled successfully.</p>
-       
+    <div class="terminal__text" *ngFor="let text of terminalArray">
+       <p> {{ text }}</p>
     </div>
     <div class="terminal__input">
       <p class="terminal__input--prefix">Website:Terminal$</p>
-      <input type="text" id="terminal__input" class="terminal__input--field" autofocus>
+      <form>
+        <input 
+          type="text" 
+          name="terminal__input"
+          id="terminal__input" 
+          class="terminal__input--field" 
+          autofocus 
+          [(ngModel)]="newCommand"
+          (keydown.enter)="runCommand()"
+          autocomplete="off">
+      </form>
     </div>
   </div>
 </section>

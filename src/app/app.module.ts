@@ -8,8 +8,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
 import { TerminalComponent } from './terminal/terminal.component';
+import { GuiComponent } from './gui/gui.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { TerminalComponent } from './terminal/terminal.component';
     HeaderComponent,
     NavComponent,
     FooterComponent,
-    HomeComponent,
-    TerminalComponent
+    TerminalComponent,
+    GuiComponent
   ],
   imports: [
     BrowserModule,
