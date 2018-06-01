@@ -1,12 +1,23 @@
 .navigation {
-    margin-bottom: 3rem;
-    &__help-menu {
-        display: flex;
-        justify-content: space-around;
-        border: 1px dashed var(--color-green-neon);
+    background-color: var(--color-grey-dark-3);
+    min-height: 100vh;
+    padding: 2rem;
+    color: var(--color-grey-light-1);
 
-        &--item {
-            margin: 2rem;
-        }
+    &__sidebar {
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+
     }
 }
+
+
+
+
+

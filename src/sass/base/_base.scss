@@ -42,15 +42,20 @@ html {
 }
 
 body {
-    margin: 3rem;
     margin-bottom: 6rem;
     // background-color: orange;
 }
 
 .container {
-    padding: 3rem;
+    display: flex;
+    background-color: var(--color-grey-light);
+    width: 100%;
+    
+}
 
-    // background-color: pink;
-    min-height: 100vh;
+.app__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 

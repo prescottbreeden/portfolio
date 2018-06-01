@@ -5,6 +5,21 @@
     color: var(--color-green-neon);
     background-color: black;
 
+    &__navigation {
+        background-color: black;
+        color: var(--color-green-neon);
+        &__help-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 1px dashed var(--color-green-neon);
+    
+            &--item {
+                margin: 2rem;
+            }
+        }
+    }
+
     &__window {
         min-height: 10rem;
         width: 100%;
