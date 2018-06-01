@@ -9,19 +9,21 @@
 
 @keyframes exterior-opacity {
     0% {
-        background-color: rgba(green,0);
+        // background-image: linear-gradient(to right, rgba($color-secondary, 0), rgba($color-primary, 0));
+        background-color: rgba($color-primary,0);
     }
     100% {
-        background-color: rgba(green,1);
+        // background-image: linear-gradient(to right, rgba($color-secondary, 1), rgba($color-primary, 1));
+        background-color: rgba($color-primary,1);
     }
 }
 
 @keyframes interior-opacity {
     0% {
-        background-color: rgba(blue,0);
+        // background: rgba($color-primary-dark,0);
     }
     100% {
-        background-color: rgba(blue,1);
+        // background: rgba($color-primary-dark,1);
     }
 }
 

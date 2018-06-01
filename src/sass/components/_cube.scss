@@ -65,10 +65,10 @@
   &__side {
     position:absolute;
     @include cube-size(9rem);
-    // animation: exterior-opacity 1s 1 4s linear forwards;
     border: .2rem solid black;
     box-shadow:inset 0 0 .6rem rgba(0,0,0,0.2);
     @extend %cubeClipPath;
+    animation: exterior-opacity 1s 1 4s linear forwards;
 
     &--front {
       transform: translateZ(4.5rem); 
@@ -106,7 +106,7 @@
     z-index: 2;
     box-shadow:inset 0 0 .3rem rgba(0,0,0,0.2);
     transition: all 1s linear;
-    // animation: interior-opacity 1s 1 4s linear forwards;
+    animation: interior-opacity 1s 1 4s linear forwards;
 
     &--front{
       transform: translateZ(-3rem) rotateY(0deg);
@@ -149,32 +149,59 @@
 
     &--front{
       transform: translateZ(-3rem) rotateY(0deg);
-      @include cube-interior-bg-props(mongo);
+
+      img {
+        @include cube-size(100%);
+      }
     }
     &--back{
       transform: translateZ(3rem);
-      @include cube-interior-bg-props(html5);
+
+      img {
+        @include cube-size(100%);
+      }
+      // @include cube-interior-bg-props(html5);
     }
     &--right{
       transform:rotateY(-90deg) translateX(3rem) rotateZ(-90deg) rotateX(180deg);
       transform-origin: top right;    
-      @include cube-interior-bg-props(css3);
+      // @include cube-interior-bg-props(css3);
+
+      img {
+        @include cube-size(100%);
+      }
+
     }
     &--left{
       transform:rotateY(270deg) translateX(-3rem);
       transform-origin: center left;
-      @include cube-interior-bg-props(python);
+      // @include cube-interior-bg-props(python);
+
+      img {
+        @include cube-size(100%);
+      }
+
     }
     &--top{
       transform:rotateX(-90deg) translateY(-3rem);
       transform-origin: top center;
-      @include cube-interior-bg-props(csharp);
+      // @include cube-interior-bg-props(csharp);
+
+      img {
+        @include cube-size(100%);
+      }
+
     }
     &--bottom{
       z-index: -1;
       transform:rotateX(90deg) translateY(-3rem) rotateZ(180deg);
       transform-origin: bottom center;
-      @include cube-interior-bg-props(angular);
+      // @include cube-interior-bg-props(angular);
+
+      img {
+        @include cube-size(100%);
+      }
+
     }
   }
 }

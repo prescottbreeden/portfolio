@@ -5,11 +5,10 @@
   --color-green-light: #7ed56f;
   --color-green-dark: #28b485;
   --color-grey-light-1: #f7f7f7;
-  --color-grey-light: #eee;
+  --color-grey-light: #ddd;
   --color-grey-dark: #777;
   --color-grey-dark-3: #333;
-  --color-white: #f2f2f2;
-  --color-white-2: #ddd;
+  --color-white: #F5F1D5;
   --color-black: #000;
   --default-border-radius: 3px; }
 
@@ -31,13 +30,27 @@ body {
 
 .container {
   display: flex;
-  background-color: var(--color-grey-light);
+  background-color: var(--color-white);
   width: 100%; }
 
 .app__container {
   position: relative;
+  flex: 1 1 100%;
   display: flex;
   flex-direction: column; }
+
+.header__title {
+  text-align: center; }
+
+.navigation {
+  background-color: var(--color-grey-dark-3);
+  min-height: 100vh;
+  padding: 2rem;
+  color: var(--color-grey-light-1); }
+  .navigation__sidebar {
+    display: inline-block; }
+  .navigation__list {
+    list-style: none; }
 
 body {
   font-weight: 400;
@@ -53,15 +66,13 @@ body {
 
 @keyframes exterior-opacity {
   0% {
-    background-color: rgba(0, 128, 0, 0); }
+    background-color: rgba(74, 132, 159, 0); }
   100% {
-    background-color: green; } }
+    background-color: #4a849f; } }
 
 @keyframes interior-opacity {
-  0% {
-    background-color: rgba(0, 0, 255, 0); }
-  100% {
-    background-color: blue; } }
+  0% { }
+  100% { } }
 
 @keyframes remove-movie-bg {
   0% {
@@ -75,16 +86,6 @@ body {
 
 .u-color-grey {
   color: grey; }
-
-.navigation {
-  background-color: var(--color-grey-dark-3);
-  min-height: 100vh;
-  padding: 2rem;
-  color: var(--color-grey-light-1); }
-  .navigation__sidebar {
-    display: inline-block; }
-  .navigation__list {
-    list-style: none; }
 
 .cube__inner-border {
   position: absolute;
@@ -136,7 +137,8 @@ body {
     height: 9rem;
     width: 9rem;
     border: .2rem solid black;
-    box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.2); }
+    box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.2);
+    animation: exterior-opacity 1s 1 4s linear forwards; }
     .cube__side--front {
       transform: translateZ(4.5rem); }
     .cube__side--back {
@@ -163,7 +165,8 @@ body {
   width: 6rem;
   z-index: 2;
   box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.2);
-  transition: all 1s linear; }
+  transition: all 1s linear;
+  animation: interior-opacity 1s 1 4s linear forwards; }
   .middle-cube__side--front {
     transform: translateZ(-3rem) rotateY(0deg); }
   .middle-cube__side--back {
@@ -193,46 +196,40 @@ body {
   transition: all 1s linear;
   z-index: -2; }
   .inferior-cube__side--front {
-    transform: translateZ(-3rem) rotateY(0deg);
-    background-image: url("../src/assets/mongo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    transform: translateZ(-3rem) rotateY(0deg); }
+    .inferior-cube__side--front img {
+      height: 100%;
+      width: 100%; }
   .inferior-cube__side--back {
-    transform: translateZ(3rem);
-    background-image: url("../src/assets/html5.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    transform: translateZ(3rem); }
+    .inferior-cube__side--back img {
+      height: 100%;
+      width: 100%; }
   .inferior-cube__side--right {
     transform: rotateY(-90deg) translateX(3rem) rotateZ(-90deg) rotateX(180deg);
-    transform-origin: top right;
-    background-image: url("../src/assets/css3.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    transform-origin: top right; }
+    .inferior-cube__side--right img {
+      height: 100%;
+      width: 100%; }
   .inferior-cube__side--left {
     transform: rotateY(270deg) translateX(-3rem);
-    transform-origin: center left;
-    background-image: url("../src/assets/python.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    transform-origin: center left; }
+    .inferior-cube__side--left img {
+      height: 100%;
+      width: 100%; }
   .inferior-cube__side--top {
     transform: rotateX(-90deg) translateY(-3rem);
-    transform-origin: top center;
-    background-image: url("../src/assets/csharp.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    transform-origin: top center; }
+    .inferior-cube__side--top img {
+      height: 100%;
+      width: 100%; }
   .inferior-cube__side--bottom {
     z-index: -1;
     transform: rotateX(90deg) translateY(-3rem) rotateZ(180deg);
-    transform-origin: bottom center;
-    background-image: url("../src/assets/angular.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; }
+    transform-origin: bottom center; }
+    .inferior-cube__side--bottom img {
+      height: 100%;
+      width: 100%; }
 
 .form {
   padding: 3rem; }
