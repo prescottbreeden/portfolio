@@ -44,7 +44,7 @@ body {
   0% {
     transform: translateX(500px) translateY(500px) rotateX(0) rotateY(0) rotateZ(0); }
   100% {
-    transform: translateX(0px) translateY(0px) rotateX(51deg) rotateY(26deg) rotateZ(62deg); } }
+    transform: translateX(0px) translateY(0px) rotateX(51deg) rotateY(386deg) rotateZ(62deg); } }
 
 @keyframes exterior-opacity {
   0% {
@@ -108,7 +108,7 @@ body {
   transform-style: preserve-3d;
   transition: all 1s linear;
   z-index: 10;
-  transform: translateX(0px) translateY(0px) rotateX(51deg) rotateY(26deg) rotateZ(62deg); }
+  transform: translateX(0px) translateY(0px) rotateX(51deg) rotateY(386deg) rotateZ(62deg); }
   .cube__anchor {
     position: relative;
     perspective: 10000;
