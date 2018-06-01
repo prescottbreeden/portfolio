@@ -33,6 +33,8 @@
   z-index: 10;
   @include rotate-null;
 
+
+
   &__anchor{  
     position:relative;
     perspective: 10000;
@@ -42,6 +44,8 @@
   &-1 {
     top: 0;
     left: 0;
+
+
     
   }
   
@@ -62,11 +66,14 @@
   &__side {
     position:absolute;
     @include cube-size(9rem);
-    display:block;
-    background-color:rgba(green, .1);
+    animation: exterior-opacity 1s 1 4s linear forwards;
     border: .2rem solid black;
     box-shadow:inset 0 0 .6rem rgba(0,0,0,0.2);
     @extend %cubeClipPath;
+
+    &:hover {
+      transform: scale3d(2,2,2)
+    }
 
     &--front {
       transform: translateZ(4.5rem); 
@@ -93,6 +100,45 @@
   }
 }
 
+/* cube middle */
+.middle-cube {
+  
+  &__side {
+    position:absolute;
+    top:1rem;
+    left:1rem;
+    @include cube-size(6rem);
+    z-index: 2;
+    box-shadow:inset 0 0 .3rem rgba(0,0,0,0.2);
+    transition: all 1s linear;
+    animation: interior-opacity 1s 1 4s linear forwards;
+
+    &--front{
+      transform: translateZ(-3rem) rotateY(0deg);
+    }
+    &--back{
+      transform: translateZ(3rem);
+    }
+    &--right{
+      transform:rotateY(-90deg) translateX(3rem) rotateZ(-90deg) rotateX(180deg);
+      transform-origin: top right;    
+    }
+    &--left{
+      transform:rotateY(270deg) translateX(-3rem);
+      transform-origin: center left;
+    }
+    &--top{
+      transform:rotateX(-90deg) translateY(-3rem);
+      transform-origin: top center;
+    }
+    &--bottom{
+      z-index: 1;
+      transform:rotateX(90deg) translateY(-3rem) rotateZ(180deg);
+      transform-origin: bottom center;
+    }
+  }
+}
+
 /* cube inferior */
 .inferior-cube {
   
@@ -101,10 +147,11 @@
     top:1rem;
     left:1rem;
     @include cube-size(6rem);
-    display:block;
     box-shadow:inset 0 0 .3rem rgba(0,0,0,0.2);
     transition: all 1s linear;
-    
+    // animation: interior-opacity 1s 1 4s linear forwards;
+    z-index: -2;
+
     &--front{
       transform: translateZ(-3rem) rotateY(0deg);
       @include cube-interior-bg-props(mongo);
@@ -129,6 +176,7 @@
       @include cube-interior-bg-props(csharp);
     }
     &--bottom{
+      z-index: -1;
       transform:rotateX(90deg) translateY(-3rem) rotateZ(180deg);
       transform-origin: bottom center;
       @include cube-interior-bg-props(angular);

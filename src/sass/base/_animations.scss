@@ -5,20 +5,22 @@
     100%   { 
         @include rotate-null;
     }
-  }
-  @keyframes spin1 {
-    0% { 
-        @include rotate-max;
+}
+
+@keyframes exterior-opacity {
+    0% {
+        background-color: rgba(green,0);
     }
-    100%   { 
-        @include rotate-one;
+    100% {
+        background-color: rgba(green,1);
     }
-  }
-  @keyframes spin2 {
-    0% { 
-        @include rotate-start;
+}
+
+@keyframes interior-opacity {
+    0% {
+        background-color: rgba(blue,0);
     }
-    100%   { 
-        @include rotate-two;
+    100% {
+        background-color: rgba(blue,1);
     }
-  }
+}
