@@ -35,12 +35,12 @@ body {
 
 .app__container {
   position: relative;
-  flex: 1 1 100%;
-  display: flex;
-  flex-direction: column; }
+  flex: 1 1 100%; }
 
-.header__title {
-  text-align: center; }
+.header {
+  display: block; }
+  .header__title {
+    text-align: center; }
 
 .navigation {
   background-color: var(--color-grey-dark-3);
@@ -58,17 +58,35 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.7rem; }
 
-@keyframes spin {
-  0% {
-    transform: translateX(500px) translateY(500px) rotateX(0) rotateY(0) rotateZ(0); }
+@keyframes spin-1 {
   100% {
-    transform: translateX(0px) translateY(0px) rotateX(51deg) rotateY(386deg) rotateZ(62deg); } }
+    transform: translateX(-60rem) translateY(0px) rotateX(51deg) rotateY(386deg) rotateZ(62deg); } }
+
+@keyframes spin-2 {
+  100% {
+    transform: translateX(-70rem) translateY(0px) rotateX(51deg) rotateY(386deg) rotateZ(62deg); } }
+
+@keyframes spin-3 {
+  100% {
+    transform: translateX(-80rem) translateY(0px) rotateX(51deg) rotateY(386deg) rotateZ(62deg); } }
+
+@keyframes horizontal-collapse-1 {
+  100% {
+    transform: translateX(-20rem); } }
+
+@keyframes horizontal-collapse-2 {
+  100% {
+    transform: translateX(-10rem); } }
+
+@keyframes horizontal-collapse-3 {
+  100% {
+    transform: translateX(); } }
 
 @keyframes exterior-opacity {
   0% {
     background-color: rgba(74, 132, 159, 0); }
   100% {
-    background-color: #4a849f; } }
+    background-color: rgba(74, 132, 159, 0.8); } }
 
 @keyframes interior-opacity {
   0% { }
@@ -97,16 +115,19 @@ body {
   transform: translate(-50%, -50%); }
 
 .cube__side {
-  clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 20%, 80% 20%, 80% 80%, 20% 80%, 20% 100%, 100% 100%, 100% 0%); }
+  clip-path: polygon(0% 0%, 0% 100%, 17% 100%, 17% 17%, 83% 17%, 83% 83%, 17% 83%, 17% 100%, 100% 100%, 100% 0%); }
 
 .spin {
   animation: spin 4s 1 linear forwards; }
 
-.spin-1 {
-  animation: spin 4s 1 linear forwards; }
+.collapse-1 {
+  animation: horizontal-collapse-1 1s 1 4s linear forwards; }
 
-.spint-2 {
-  animation: spin 4s 1 linear forwards; }
+.collapse-2 {
+  animation: horizontal-collapse-2 1s 1 4s linear forwards; }
+
+.collapse-3 {
+  animation: horizontal-collapse-3 1s 1 4s linear forwards; }
 
 /* cube exterior */
 .cube {
@@ -115,30 +136,32 @@ body {
   transform-style: preserve-3d;
   transition: all 1s linear;
   z-index: 10;
-  transform: translateX(0px) translateY(0px) rotateX(51deg) rotateY(386deg) rotateZ(62deg);
   display: block; }
   .cube__anchor {
-    position: absolute;
-    top: 10rem;
-    left: 20rem;
-    perspective: 10000;
-    perspective-origin: 50% 10rem; }
+    display: block;
+    width: 100%;
+    height: 20rem;
+    perspective: 1000rem;
+    perspective-origin: 50% 50%; }
   .cube-1 {
-    top: 10rem;
-    left: 10rem; }
+    top: 50%;
+    left: 100rem;
+    animation: spin-1 1s 1 1.5s linear forwards; }
   .cube-2 {
-    top: 12.7rem;
-    left: -.2rem; }
-  .cube-1 {
-    top: 6.5rem;
-    left: 10.9rem; }
+    top: 50%;
+    left: 100rem;
+    animation: spin-2 1s 1 1s linear forwards; }
+  .cube-3 {
+    top: 50%;
+    left: 100rem;
+    animation: spin-3 1s 1 .5s linear forwards; }
   .cube__side {
     position: absolute;
     height: 9rem;
     width: 9rem;
-    border: .2rem solid black;
+    border: .1rem solid black;
     box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.2);
-    animation: exterior-opacity 1s 1 4s linear forwards; }
+    animation: exterior-opacity 1s 1 2.25s linear forwards; }
     .cube__side--front {
       transform: translateZ(4.5rem); }
     .cube__side--back {
@@ -163,7 +186,6 @@ body {
   left: 1rem;
   height: 6rem;
   width: 6rem;
-  z-index: 2;
   box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.2);
   transition: all 1s linear;
   animation: interior-opacity 1s 1 4s linear forwards; }
@@ -181,7 +203,6 @@ body {
     transform: rotateX(-90deg) translateY(-3rem);
     transform-origin: top center; }
   .middle-cube__side--bottom {
-    z-index: 1;
     transform: rotateX(90deg) translateY(-3rem) rotateZ(180deg);
     transform-origin: bottom center; }
 
@@ -224,7 +245,6 @@ body {
       height: 100%;
       width: 100%; }
   .inferior-cube__side--bottom {
-    z-index: -1;
     transform: rotateX(90deg) translateY(-3rem) rotateZ(180deg);
     transform-origin: bottom center; }
     .inferior-cube__side--bottom img {

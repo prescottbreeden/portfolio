@@ -49,6 +49,7 @@ body {
 .container {
     display: flex;
     background-color: var(--color-white);
+    // background-color: var(--color-grey-dark-3);
     width: 100%;
     
 }
@@ -56,12 +57,13 @@ body {
 .app__container {
     position: relative;
     flex: 1 1 100%;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // align-content: stretch;
 }
 
 .header {
     // background-color: pink;
+    display: block;
     
     &__title {
         // display: block;

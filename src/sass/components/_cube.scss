@@ -9,19 +9,21 @@
 }
 
 %cubeClipPath {
-  clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 20%, 80% 20%, 80% 80%, 20% 80%, 20% 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 100%, 17% 100%, 17% 17%, 83% 17%, 83% 83%, 17% 83%, 17% 100%, 100% 100%, 100% 0%);
 }
 
 .spin {
   animation: spin 4s 1 linear forwards;
 }
 
-.spin-1 {
-  animation: spin 4s 1 linear forwards;
+.collapse-1 {
+  animation: horizontal-collapse-1 1s 1 4s linear forwards;
 }
-
-.spint-2 {
-  animation: spin 4s 1 linear forwards;
+.collapse-2 {
+  animation: horizontal-collapse-2 1s 1 4s linear forwards;
+}
+.collapse-3 {
+  animation: horizontal-collapse-3 1s 1 4s linear forwards;
 }
 
 /* cube exterior */
@@ -36,26 +38,36 @@
 
 
   &__anchor{  
-    position: absolute;
-    top:10rem;
-    left:20rem;
-    perspective: 10000;
-    perspective-origin: 50% 10rem;
+    display: block;
+    width: 100%;
+    height: 20rem;
+    perspective: 1000rem;
+    perspective-origin: 50% 50%;
+
   }
 
+  // frameworks
   &-1 {
-    top: 10rem;
-    left: 10rem;
+    top: 50%;
+    left: 100rem;
+    animation: spin-1 1s 1 1.5s linear forwards;
+    
   }
-  
+
+  // db cube
   &-2 {
-    top: 12.7rem;
-    left: -.2rem;
-  
+    top: 50%;
+    left: 100rem;
+    animation: spin-2 1s 1 1s linear forwards;
+    
   }
-  &-1 {
-    top: 6.5rem;
-    left: 10.9rem;
+
+  // languages
+  &-3 {
+    top: 50%;
+    left: 100rem;
+    animation: spin-3 1s 1 .5s linear forwards;
+    
   }
 
   &__inner-border {
@@ -65,10 +77,10 @@
   &__side {
     position:absolute;
     @include cube-size(9rem);
-    border: .2rem solid black;
+    border: .1rem solid black;
     box-shadow:inset 0 0 .6rem rgba(0,0,0,0.2);
     @extend %cubeClipPath;
-    animation: exterior-opacity 1s 1 4s linear forwards;
+    animation: exterior-opacity 1s 1 2.25s linear forwards;
 
     &--front {
       transform: translateZ(4.5rem); 
@@ -103,7 +115,7 @@
     top:1rem;
     left:1rem;
     @include cube-size(6rem);
-    z-index: 2;
+    // z-index: 2;
     box-shadow:inset 0 0 .3rem rgba(0,0,0,0.2);
     transition: all 1s linear;
     animation: interior-opacity 1s 1 4s linear forwards;
@@ -127,7 +139,7 @@
       transform-origin: top center;
     }
     &--bottom{
-      z-index: 1;
+      // z-index: 1;
       transform:rotateX(90deg) translateY(-3rem) rotateZ(180deg);
       transform-origin: bottom center;
     }
@@ -160,12 +172,11 @@
       img {
         @include cube-size(100%);
       }
-      // @include cube-interior-bg-props(html5);
+
     }
     &--right{
       transform:rotateY(-90deg) translateX(3rem) rotateZ(-90deg) rotateX(180deg);
       transform-origin: top right;    
-      // @include cube-interior-bg-props(css3);
 
       img {
         @include cube-size(100%);
@@ -175,7 +186,6 @@
     &--left{
       transform:rotateY(270deg) translateX(-3rem);
       transform-origin: center left;
-      // @include cube-interior-bg-props(python);
 
       img {
         @include cube-size(100%);
@@ -185,7 +195,6 @@
     &--top{
       transform:rotateX(-90deg) translateY(-3rem);
       transform-origin: top center;
-      // @include cube-interior-bg-props(csharp);
 
       img {
         @include cube-size(100%);
@@ -193,10 +202,9 @@
 
     }
     &--bottom{
-      z-index: -1;
+      // z-index: -1;
       transform:rotateX(90deg) translateY(-3rem) rotateZ(180deg);
       transform-origin: bottom center;
-      // @include cube-interior-bg-props(angular);
 
       img {
         @include cube-size(100%);

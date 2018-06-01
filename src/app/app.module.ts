@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { GuiComponent } from './gui/gui.component';
+import { CubeComponent } from './cube/cube.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GuiComponent } from './gui/gui.component';
     NavComponent,
     FooterComponent,
     TerminalComponent,
-    GuiComponent
+    GuiComponent,
+    CubeComponent
   ],
   imports: [
     BrowserModule,

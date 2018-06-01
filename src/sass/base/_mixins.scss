@@ -1,18 +1,8 @@
 @mixin rotate-start {
-    transform:  
-        translateX(500px) 
-        translateY(500px) 
-        rotateX(0) 
-        rotateY(0) 
-        rotateZ(0);
+
 }
 @mixin rotate-null {
-    transform:  
-        translateX(0px) 
-        translateY(0px) 
-        rotateX(51deg) 
-        rotateY(386deg) 
-        rotateZ(62deg);
+
 }
 
 @mixin rotate-one {

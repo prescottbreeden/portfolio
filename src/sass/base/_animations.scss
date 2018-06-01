@@ -1,9 +1,47 @@
-@keyframes spin {
-    0% { 
-        @include rotate-start;
-    }
+@keyframes spin-1 {
+
     100%   { 
-        @include rotate-null;
+        transform:  
+            translateX(-60rem) 
+            translateY(0px) 
+            rotateX(51deg) 
+            rotateY(386deg) 
+            rotateZ(62deg);
+    }
+}
+@keyframes spin-2 {
+    100%   { 
+        transform:  
+            translateX(-70rem) 
+            translateY(0px) 
+            rotateX(51deg) 
+            rotateY(386deg) 
+            rotateZ(62deg);
+    }
+}
+@keyframes spin-3 {
+    100%   { 
+        transform:  
+            translateX(-80rem) 
+            translateY(0px) 
+            rotateX(51deg) 
+            rotateY(386deg) 
+            rotateZ(62deg);
+    }
+}
+@keyframes horizontal-collapse-1 {
+    100% {
+        transform: translateX(-20rem)
+    }
+}
+@keyframes horizontal-collapse-2 {
+    100% {
+        transform: translateX(-10rem)
+    }
+}
+@keyframes horizontal-collapse-3 {
+    100% {
+        transform: translateX()
     }
 }
 
@@ -14,7 +52,7 @@
     }
     100% {
         // background-image: linear-gradient(to right, rgba($color-secondary, 1), rgba($color-primary, 1));
-        background-color: rgba($color-primary,1);
+        background-color: rgba($color-primary, .8);
     }
 }
 
