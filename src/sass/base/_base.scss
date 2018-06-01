@@ -44,10 +44,13 @@ html {
 body {
     margin: 3rem;
     margin-bottom: 6rem;
-    min-height: 100vh;
+    // background-color: orange;
 }
 
 .container {
-    border-radius: 3px;
+    padding: 3rem;
+
+    // background-color: pink;
+    min-height: 100vh;
 }
 

@@ -16,23 +16,44 @@
   animation: spin 4s 1 linear forwards;
 }
 
-/* temp wrapper */
-.container{
-  height: 300px;
-  margin-top:50px;
-  position:relative;
-  perspective: 10000;
-  perspective-origin: 50% 10rem;
+.spin-1 {
+  animation: spin 4s 1 linear forwards;
+}
+
+.spint-2 {
+  animation: spin 4s 1 linear forwards;
 }
 
 /* cube exterior */
 .cube{
   position: relative;
-  margin: 0 auto;
   width: 4rem;
   transform-style: preserve-3d;
   transition: all 1s linear;
   z-index: 10;
+  @include rotate-null;
+
+  &__anchor{  
+    position:relative;
+    perspective: 10000;
+    perspective-origin: 50% 10rem;
+  }
+
+  &-1 {
+    top: 0;
+    left: 0;
+    
+  }
+  
+  &-2 {
+    top: 12.7rem;
+    left: -.2rem;
+  
+  }
+  &-1 {
+    top: 6.5rem;
+    left: 10.9rem;
+  }
 
   &__inner-border {
     @extend %innerCubeStyle;
@@ -42,15 +63,9 @@
     position:absolute;
     @include cube-size(9rem);
     display:block;
-    background-color:rgba(green, 0);
+    background-color:rgba(green, .1);
     border: .2rem solid black;
     box-shadow:inset 0 0 .6rem rgba(0,0,0,0.2);
-    font-size:.4rem;
-    text-align:center;
-    line-height:6rem;
-    color:rgba(0,0,0,0.5);
-    font-family:sans-serif;
-    text-transform:uppercase;
     @extend %cubeClipPath;
 
     &--front {
