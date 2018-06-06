@@ -1,29 +1,52 @@
 @keyframes spin-1 {
-
-    100%   { 
+    0% {
+        transform: 
+            translateX(160rem) 
+            translateY(20rem) 
+            rotateX(0deg) 
+            rotateY(0deg) 
+            rotateZ(0deg);
+    }
+    100% { 
         transform:  
-            translateX(-60rem) 
-            translateY(0px) 
+            translateX(0) 
+            translateY(0) 
             rotateX(51deg) 
             rotateY(386deg) 
             rotateZ(62deg);
     }
 }
 @keyframes spin-2 {
+    0% {
+        transform:  
+            translateX(100rem) 
+            translateY(100rem) 
+            rotateX(0deg) 
+            rotateY(0deg) 
+            rotateZ(0deg);
+    }
     100%   { 
         transform:  
-            translateX(-70rem) 
-            translateY(0px) 
+            translateX(0) 
+            translateY(0) 
             rotateX(51deg) 
             rotateY(386deg) 
             rotateZ(62deg);
     }
 }
 @keyframes spin-3 {
+    0% {
+        transform:  
+            translateX(0rem) 
+            translateY(100rem) 
+            rotateX(0deg) 
+            rotateY(0deg) 
+            rotateZ(0deg);
+    }
     100%   { 
         transform:  
-            translateX(-80rem) 
-            translateY(0px) 
+            translateX(0rem) 
+            translateY(0rem) 
             rotateX(51deg) 
             rotateY(386deg) 
             rotateZ(62deg);
@@ -52,7 +75,7 @@
     }
     100% {
         // background-image: linear-gradient(to right, rgba($color-secondary, 1), rgba($color-primary, 1));
-        background-color: rgba($color-primary, .8);
+        background-color: rgba($color-primary, 1);
     }
 }
 
@@ -63,6 +86,19 @@
     100% {
         // background: rgba($color-primary-dark,1);
     }
+}
+
+@keyframes slide-db-behind {
+    //-- slide behind state --//
+    100% {
+        transform: 
+            translateY(3.6rem)
+            translateX(10.1rem);
+        z-index: -100;
+    }
+    // top: 6.2rem;
+    // left: 22.4rem;
+    // z-index: -100;
 }
 
 @keyframes remove-movie-bg {
