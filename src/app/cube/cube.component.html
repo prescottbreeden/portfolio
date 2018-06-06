@@ -1,10 +1,15 @@
-<button class="btn btn__cube" id="control_c ollapse">Collapse</button>
-<button class="btn btn__cube" id="control_expand">Expand</button>
-<button class="btn btn__cube" id="control_stack">Stack</button>
-<button class="btn btn__cube" id="control_examine">Examine</button>
-<div class="cube__anchor">
+<button class="btn btn__cube" (click)="collapseCube()">Collapse</button>
+<button class="btn btn__cube" (click)="expandCube()">Expand</button>
+<button class="btn btn__cube" (click)="stackCube()">Stack</button>
+<button class="btn btn__cube" (click)="examineCube()">Examine</button>
+<div class="cube__anchor" [class.flatten]="collapse">
   <!-- exterior cube -->
-  <div class="cube cube-1" id="cube-1">
+  <div class="cube cube-1"
+    [class.collapse-1]="collapse"
+    [class.expand-1]="expand"
+    [class.stack-1]="stack"
+    [class.examine-1]="examine"
+  >
     <div class="cube__side cube__side--front">
         <div class="cube__inner-border"></div>
     </div>
@@ -57,8 +62,13 @@
 
   <!-- cube 2 -->
 
-  <div class="cube cube-2" id="cube-2">
-    <!-- exterior cube -->
+  <div class="cube cube-2" 
+    [class.collapse-2]="collapse"
+    [class.expand-2]="expand"
+    [class.stack-2]="stack"
+    [class.examine-2]="examine"
+  >
+    <!-- exterior cube databases-->
     <div class="cube__side cube__side--front">
       <div class="cube__inner-border"></div>
     </div>
@@ -78,7 +88,7 @@
       <div class="cube__inner-border"></div>
     </div>
     <div class="middle-cube">
-      <!-- logo middle cube -->
+      <!-- logo middle cube databases -->
       <div class="middle-cube__side middle-cube__side--front"></div>
       <div class="middle-cube__side middle-cube__side--back"></div>
       <div class="middle-cube__side middle-cube__side--top"></div>
@@ -112,7 +122,12 @@
 
 <!-- cube 3 -->
 
-  <div class="cube cube-3" id="cube-3">
+  <div class="cube cube-3"
+    [class.collapse-3]="collapse"
+    [class.expand-3]="expand"
+    [class.stack-3]="stack"
+    [class.examine-3]="examine"
+  >
     <!-- exterior cube -->
     <div class="cube__side cube__side--front">
       <div class="cube__inner-border"></div>

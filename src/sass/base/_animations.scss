@@ -91,10 +91,9 @@
 @keyframes slide-db-behind {
     //-- slide behind state --//
     100% {
-        transform: 
-            translateY(3.6rem)
-            translateX(10.1rem);
-        z-index: -100;
+            top: 6.2rem;
+            left: 22.4rem;
+            z-index: -100;
     }
     // top: 6.2rem;
     // left: 22.4rem;

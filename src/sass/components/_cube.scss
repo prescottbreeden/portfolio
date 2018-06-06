@@ -17,21 +17,28 @@
 }
 
 .collapse-1 {
-  animation: horizontal-collapse-1 1s 1 4s linear forwards;
+      //-- collapsed state --//
+    top: 10.1rem !important;
+    left: 12.4rem !important;
 }
 .collapse-2 {
-  animation: horizontal-collapse-2 1s 1 4s linear forwards;
+      //-- collapsed state --//
+    top: 10.1rem !important;
+    left: 12.4rem !important;
 }
 .collapse-3 {
-  animation: horizontal-collapse-3 1s 1 4s linear forwards;
+      //-- collapsed state --//
+    top: 10.1rem !important;
+    left: 12.4rem !important;
 }
+
 
 /* cube exterior */
 .cube{
   position: relative;
   width: 4rem;
   transform-style: preserve-3d;
-  transition: all 1s linear;
+  transition: all .5s ease-out;
   z-index: 10;
   @include rotate-null;
   display: block;
@@ -43,7 +50,7 @@
     height: 20rem;
     perspective: 1000rem;
     perspective-origin: 50% 50%;
-    animation: slide-db-behind .5s 1 4s ease-out forwards;
+   
 
   }
 
@@ -55,8 +62,8 @@
       rotateZ(62deg);
     
     //-- initial state --//
-    top: 10rem;
-    left: 15rem;
+    top: 10.3rem;
+    left: 27rem;
     
     //-- pageload animation --//
     animation: spin-1 4s 1 ease-out forwards;
@@ -72,15 +79,12 @@
     
     //-- initial state --//
     top: 3.9rem;
-    left: 26rem;
-
-    //-- slide-behind state --//
-    // top: 10.1rem;
-    // left: 22.4rem;
-    // z-index: -100;
+    left: 16rem;
     
     //-- pageload animation --//
-    animation: spin-2 4s 1 linear forwards;
+    animation: spin-2 4s 1 ease-out forwards;
+
+    // animation: slide-db-behind .5s 1 4s ease-out forwards;
     
     
   }
@@ -94,10 +98,10 @@
 
     //-- initial state --//
     top: 16.6rem;
-    left: 25.9rem;
+    left: 15.9rem;
     
     //-- pageload animation --//
-    animation: spin-3 4s 1 linear forwards;
+    animation: spin-3 4s 1 ease-out forwards;
     
   }
 
