@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { GuiComponent } from './gui/gui.component';
 import { CubeComponent } from './cube/cube.component';
+import { ExplosionComponent } from './explosion/explosion.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CubeComponent } from './cube/cube.component';
     FooterComponent,
     TerminalComponent,
     GuiComponent,
-    CubeComponent
+    CubeComponent,
+    ExplosionComponent
   ],
   imports: [
     BrowserModule,
