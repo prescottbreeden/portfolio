@@ -7,7 +7,8 @@
                 <li class="navigation__item">Portfolio</li>
                 <li class="navigation__item">Contact</li>
             </ul>
-            <button class="btn" [routerLink]="['terminal']">Terminal</button>
+            <button class="btn" *ngIf="!terminalStatus" (click)="toggleTerminal()" [routerLink]="['terminal']">Terminal</button>
+            <button class="btn" *ngIf="terminalStatus" (click)="toggleTerminal()" [routerLink]="['']">Close Terminal</button>
         </div>
     </nav>
     <div class="app__container">

@@ -25,9 +25,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
-body {
-  margin-bottom: 6rem; }
-
 .container {
   display: flex;
   background-color: var(--color-white);
@@ -76,6 +73,14 @@ body {
   100% {
     transform: translateX(0rem) translateY(0rem) rotateX(51deg) rotateY(386deg) rotateZ(62deg); } }
 
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
 @keyframes horizontal-collapse-1 {
   100% {
     transform: translateX(-20rem); } }
@@ -92,7 +97,7 @@ body {
   0% {
     background-color: rgba(74, 132, 159, 0); }
   100% {
-    background-color: #4a849f; } }
+    background-color: rgba(74, 132, 159, 0); } }
 
 @keyframes interior-opacity {
   0% { }
@@ -170,20 +175,17 @@ body {
     perspective: 1000rem;
     perspective-origin: 50% 50%; }
   .cube-1 {
-    transform: rotateX(51deg) rotateY(386deg) rotateZ(62deg);
+    transform: rotateX(51deg) rotateY(26deg) rotateZ(62deg);
     top: 10.3rem;
-    left: 27rem;
-    animation: spin-1 4s 1 ease-out forwards; }
+    left: 27rem; }
   .cube-2 {
     transform: rotateX(51deg) rotateY(386deg) rotateZ(62deg);
     top: 3.9rem;
-    left: 16rem;
-    animation: spin-2 4s 1 ease-out forwards; }
+    left: 16rem; }
   .cube-3 {
     transform: rotateX(51deg) rotateY(386deg) rotateZ(62deg);
     top: 16.6rem;
-    left: 15.9rem;
-    animation: spin-3 4s 1 ease-out forwards; }
+    left: 15.9rem; }
   .cube__side {
     position: absolute;
     height: 9rem;
