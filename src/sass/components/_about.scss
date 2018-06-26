@@ -1,0 +1,38 @@
+.about {
+    margin: 3rem 5rem;
+
+    &__text-box {
+        margin-bottom: 4rem;
+    }
+
+    &__heading {
+        // text-align: center;
+    }
+
+    &__blurb {
+        hyphens: manual;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        padding: 1rem 3rem;
+        border: 2px solid $color-primary;
+        border-radius: 10px;
+        transition: all .2s;
+        box-shadow: 0 1rem 2.5rem rgba(black, .1);
+
+        &:not(:last-child) {
+            margin-right: 10rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            color: var(--color-white);
+            cursor: pointer;
+        }
+    }
+}

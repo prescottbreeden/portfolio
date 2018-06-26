@@ -12,6 +12,8 @@ import { TerminalComponent } from './terminal/terminal.component';
 import { GuiComponent } from './gui/gui.component';
 import { CubeComponent } from './cube/cube.component';
 import { ExplosionComponent } from './explosion/explosion.component';
+import { HomeComponent } from './home/home.component';
+import { TechComponent } from './tech/tech.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ExplosionComponent } from './explosion/explosion.component';
     TerminalComponent,
     GuiComponent,
     CubeComponent,
-    ExplosionComponent
+    ExplosionComponent,
+    HomeComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,

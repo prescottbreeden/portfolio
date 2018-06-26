@@ -27,7 +27,7 @@ html {
 
 .container {
   display: flex;
-  background-color: var(--color-white);
+  background-color: white;
   width: 100%; }
 
 .app__container {
@@ -39,20 +39,10 @@ html {
   .header__title {
     text-align: center; }
 
-.navigation {
-  background-color: var(--color-grey-dark-3);
-  min-height: 100vh;
-  padding: 2rem;
-  color: var(--color-grey-light-1); }
-  .navigation__sidebar {
-    display: inline-block; }
-  .navigation__list {
-    list-style: none; }
-
 body {
   font-weight: 400;
   line-height: 1.6;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.7rem; }
 
 @keyframes spin-1 {
@@ -121,6 +111,79 @@ body {
 
 .u-color-grey {
   color: grey; }
+
+.header {
+  min-height: 45rem;
+  background-image: linear-gradient(to right, rgba(74, 132, 159, 0.6), rgba(27, 52, 64, 0.6)), url("assets/keyboard.jpg");
+  background-position: 50% 95%;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat; }
+  .header__title {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__primary-text {
+    font-family: 'Vollkorn', serif;
+    font-size: 6rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase; }
+  .header__secondary-text {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .header__tertiary-text {
+    position: absolute;
+    font-style: italic;
+    letter-spacing: 1px;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-white); }
+
+.navigation {
+  background-color: var(--color-grey-dark-3);
+  width: 100%;
+  color: var(--color-white); }
+  .navigation__list {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .navigation__item {
+    cursor: pointer;
+    outline: none;
+    flex: 0 0 10%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    letter-spacing: 1.5px; }
+    .navigation__item > * {
+      height: 100%; }
+  .navigation__item::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #4A849F;
+    transform: scaleX(0);
+    transition: transform 0.2s, background-color 0.1s; }
+  .navigation__item:hover::before {
+    transform: scaleY(1); }
+  .navigation__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-white);
+    outline: none;
+    margin-right: .5rem; }
 
 .btn {
   padding: 1rem 3rem;
@@ -328,7 +391,6 @@ input[type="text"] {
 .terminal {
   font-size: 2rem;
   letter-spacing: 1px;
-  font-family: 'Courier New', Courier, monospace;
   color: var(--color-green-neon);
   background-color: black; }
   .terminal__navigation {
@@ -364,3 +426,25 @@ input[type="text"] {
       display: inline-block; }
   .terminal__submit {
     padding: 2rem; }
+
+.about {
+  margin: 3rem 5rem; }
+  .about__text-box {
+    margin-bottom: 4rem; }
+  .about__blurb {
+    hyphens: manual; }
+  .about__links {
+    display: flex;
+    justify-content: center; }
+  .about__link {
+    padding: 1rem 3rem;
+    border: 2px solid #4A849F;
+    border-radius: 10px;
+    transition: all .2s;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1); }
+    .about__link:not(:last-child) {
+      margin-right: 10rem; }
+    .about__link:hover {
+      background-color: #4A849F;
+      color: var(--color-white);
+      cursor: pointer; }

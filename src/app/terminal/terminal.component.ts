@@ -64,7 +64,7 @@ newCommand = '';
     }
     if (this.newCommand === 'about') {
       // tslint:disable-next-line:max-line-length
-      this.terminalArray.push('> I am a full-stack software developer with a background in the arts and sciences.  As a former opera singer, then CEO, and then neuroscientist, the one consistency across all realms was the constant need for newer and better tech to drive innovation while improving the consumer experience. I am passionate for tackling problems and technical challenges to find efficient and elegant solutions.');
+      this.terminalArray.push('> I am a full-stack software developer with a background in the arts and sciences.  As a former opera singer, then CEO, and then neuroscientist, the one consistency across all realms was the constant need for newer and better tech to drive innovation while improving the consumer experience. I am passionate for tackling problems and technical challenges to find efficient, maintainable, and reusable solutions.');
     }
     this.newCommand = '';
   }

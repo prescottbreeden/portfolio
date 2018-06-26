@@ -1,0 +1,40 @@
+<div class="navigation">
+    <div class="navigation__list">
+        <div class="navigation__item navigation__item--home" [routerLink]="['']">
+            <svg class="navigation__icon">
+                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-profile"></use>
+            </svg>
+            <span>About</span>
+        </div>
+        <div class="navigation__item">
+            <svg class="navigation__icon navigation__icon--about">
+                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-database"></use>
+            </svg>
+            <span>Tech</span>
+        </div>
+        <div class="navigation__item">
+            <svg class="navigation__icon navigation__icon--portfolio">
+                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-embed2"></use>
+            </svg>
+            <span>Portfolio</span>
+        </div>
+        <div class="navigation__item">
+            <svg class="navigation__icon navigation__icon--contact">
+                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-envelop"></use>
+            </svg>
+            <span>Contact</span>
+        </div>
+        <div class="navigation__item"  *ngIf="!terminalStatus" (click)="toggleTerminal()" [routerLink]="['terminal']">
+            <svg class="navigation__icon navigation__icon--open-terminal">
+                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-terminal"></use>
+            </svg>
+            <span>Terminal</span>
+        </div>
+        <div class="navigation__item" *ngIf="terminalStatus" (click)="toggleTerminal()" [routerLink]="['']">
+            <svg class="navigation__icon navigation__icon--close-terminal" >
+                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-terminal"></use>
+            </svg>
+            <span>Terminal</span>
+        </div>
+    </div>
+</div>

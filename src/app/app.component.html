@@ -1,22 +1,16 @@
 <div class="container">
-    <nav class="navigation__sidebar">
-        <div class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">Home</li>
-                <li class="navigation__item">About</li>
-                <li class="navigation__item">Portfolio</li>
-                <li class="navigation__item">Contact</li>
-            </ul>
-            <button class="btn" *ngIf="!terminalStatus" (click)="toggleTerminal()" [routerLink]="['terminal']">Terminal</button>
-            <button class="btn" *ngIf="terminalStatus" (click)="toggleTerminal()" [routerLink]="['']">Close Terminal</button>
-        </div>
-    </nav>
+    <!-- <nav class="navigation__sidebar">
+        <app-nav></app-nav>
+    </nav> -->
     <div class="app__container">
         <header class="header">
             <div class="header__title">
-                <h1>prescott breeden</h1>
+                <h1 class="header__primary-text">Prescott Breeden</h1>
+                <p class="header__secondary-text">Full-stack Software Developer</p>
             </div>
-        </header>    
+            <p class="header__tertiary-text">"Elegant code is clean, efficient, and reusable code"</p>
+        </header>
+        <app-nav></app-nav>
         <router-outlet></router-outlet>
     </div>
 </div>
