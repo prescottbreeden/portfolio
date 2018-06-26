@@ -48,6 +48,12 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.7rem; }
 
+@keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: var(--color-white); } }
+
 @keyframes spin-1 {
   0% {
     transform: translateX(160rem) translateY(20rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
@@ -148,6 +154,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: var(--color-red-light); }
+  .header__blink {
+    animation: blink 1.5s step-end infinite; }
 
 .navigation {
   background-color: var(--color-grey-dark-3);
@@ -454,3 +462,10 @@ input[type="text"] {
       background-color: #4A849F;
       color: var(--color-white);
       cursor: pointer; }
+
+.tech__images {
+  display: flex; }
+
+.tech__image {
+  padding: 1rem;
+  height: 10rem; }

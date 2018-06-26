@@ -44,4 +44,8 @@
         transform: translateX(-50%);
         color: var(--color-red-light);
     }
+
+    &__blink {
+        animation: blink 1.5s step-end infinite;
+    }
 }

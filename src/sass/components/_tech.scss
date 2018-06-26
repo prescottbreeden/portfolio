@@ -1,0 +1,21 @@
+.tech {
+    // background-image: linear-gradient(to right, 
+    //                     rgba(white, .2), 
+    //                     rgba(white, .2)), 
+    //                     url("assets/keyboard2.jpeg");
+    // background-size: cover;
+
+    &__category {
+       
+    }
+
+    &__images {
+        display: flex;
+    }
+
+    &__image {
+        padding: 1rem;
+        height: 10rem;
+    
+    }
+}
