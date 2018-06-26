@@ -9,7 +9,5 @@ export class AppComponent {
   terminalStatus = false;
 
 
-  toggleTerminal() {
-    this.terminalStatus = !this.terminalStatus;
-  }
+
 }

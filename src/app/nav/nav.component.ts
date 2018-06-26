@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  terminalStatus = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleTerminal() {
+    this.terminalStatus = !this.terminalStatus;
+  }
 }
