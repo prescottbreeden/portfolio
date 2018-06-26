@@ -1,5 +1,5 @@
 :root {
-  --color-red-light: #FF6A4F;
+  --color-red-light: rgb(255, 156, 103);
   --color-red-dark: #D50000;
   --color-green-neon: #47fe47;
   --color-green-light: #7ed56f;
@@ -8,7 +8,7 @@
   --color-grey-light: #ddd;
   --color-grey-dark: #777;
   --color-grey-dark-3: #333;
-  --color-white: #F5F1D5;
+  --color-white: #eee;
   --color-black: #000;
   --default-border-radius: 3px; }
 
@@ -24,6 +24,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+
+body {
+  background-color: var(--color-white); }
 
 .container {
   display: flex;
@@ -121,7 +124,7 @@ body {
   background-repeat: no-repeat; }
   .header__title {
     width: 100%;
-    color: white;
+    color: var(--color-white);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,13 +139,15 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase; }
   .header__tertiary-text {
+    width: 100%;
     position: absolute;
+    text-align: center;
     font-style: italic;
     letter-spacing: 1px;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--color-white); }
+    color: var(--color-red-light); }
 
 .navigation {
   background-color: var(--color-grey-dark-3);
@@ -428,7 +433,8 @@ input[type="text"] {
     padding: 2rem; }
 
 .about {
-  margin: 3rem 5rem; }
+  padding: 3rem 5rem;
+  background-color: var(--color-white); }
   .about__text-box {
     margin-bottom: 4rem; }
   .about__blurb {

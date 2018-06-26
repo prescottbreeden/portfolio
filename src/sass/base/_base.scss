@@ -3,7 +3,7 @@
 
     // colors 
 
-    --color-red-light: #FF6A4F;
+    --color-red-light: rgb(255, 156, 103);
     --color-red-dark: #D50000;
     
     --color-green-neon: #47fe47;
@@ -15,7 +15,7 @@
     --color-grey-dark: #777;
     --color-grey-dark-3: #333;
     
-    --color-white: #F5F1D5;
+    --color-white: #eee;
     
     --color-black: #000;
     
@@ -41,7 +41,7 @@ html {
 
 body {
     // margin-bottom: 6rem;
-    // background-color: orange;
+    background-color: var(--color-white);
 }
 
 .container {

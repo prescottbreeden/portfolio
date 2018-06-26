@@ -14,6 +14,8 @@ import { CubeComponent } from './cube/cube.component';
 import { ExplosionComponent } from './explosion/explosion.component';
 import { HomeComponent } from './home/home.component';
 import { TechComponent } from './tech/tech.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { TechComponent } from './tech/tech.component';
     CubeComponent,
     ExplosionComponent,
     HomeComponent,
-    TechComponent
+    TechComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
