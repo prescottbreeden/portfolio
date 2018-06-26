@@ -4,9 +4,10 @@
                         rgba($color-primary, .6), 
                         rgba($color-primary-dark, .6)), 
                         url("assets/keyboard.jpg");
-    background-position: bottom;
+    background-position: 50% 95%;
     background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
 
     &__title {
         width: 100%;
@@ -28,5 +29,16 @@
         font-size: 2rem;
         letter-spacing: 1px;
         text-transform: uppercase;
+
+    }
+
+    &__tertiary-text {
+        position: absolute;
+        font-style: italic;
+        letter-spacing: 1px;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--color-white);
     }
 }

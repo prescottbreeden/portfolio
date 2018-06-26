@@ -1,16 +1,16 @@
 .navigation {
     background-color: var(--color-grey-dark-3);
     width: 100%;
-    color: var(--color-grey-light-1);
+    // color: var(--color-grey-light-1);
+    color: var(--color-white);
     
     &__sidebar {
         // position: fixed;
     }
 
     &__list {
-        // background-color: $color-primary;
         margin: 0 auto;
-        width: 50%;
+        width: 60%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -26,17 +26,6 @@
         padding: 1rem;
         display: flex;
         letter-spacing: 1.5px;
-
-        // &--home:hover::after {
-        //     position: absolute;
-        //     top: 0;
-        //     right: 0;
-        //     background-color: $color-primary;
-        //     content: "Home";
-        //     font-size: 1rem;
-        //     color: green;
-            
-        // }
 
         & > * {
             height: 100%;  
@@ -66,7 +55,8 @@
     &__icon {
         height: 2rem;
         width: 2rem;
-        fill: var(--color-grey-light-1);
+        // fill: var(--color-grey-light-1);
+        fill: var(--color-white);
         outline: none;
         margin-right: .5rem;
 
