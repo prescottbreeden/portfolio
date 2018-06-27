@@ -1,0 +1,11 @@
+$total: 31;
+
+@mixin beehive-appear($wait) {
+   animation: appear 1s #{$wait * .1}s 1 ease-out forwards; 
+}
+
+@for $i from 1 through $total {
+    .img-#{$i} { 
+        @include beehive-appear($i); 
+    }
+}
