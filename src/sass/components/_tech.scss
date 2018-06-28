@@ -1,112 +1,77 @@
 .tech {
-    // background-image: linear-gradient(to right, 
-    //                     rgba(white, .2), 
-    //                     rgba(white, .2)), 
-    //                     url("assets/keyboard2.jpeg");
-    // background-size: cover;
+    width: 100vw;
+    position: relative;
+}
 
-    &__category {
-       
-    }
+.grid {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
 
-    &__images {
-        display: flex;
-    }
-
-    &__image {
-        padding: 1rem;
-        height: 10rem;
-        opacity: 0;
+.hex-container {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 12.85714285714286%;
+    padding: 0 0 14.87860145166612% 0;
+    transform: rotate(-60deg) skewY(30deg);
+    background: #fd005f;
+    overflow: hidden;
+    visibility: hidden;
+    
+    p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: (-50%, -50%);
     }
 }
 
-.img {
+.hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: var(--color-white);
+    background-color: $color-primary;
+    transform: skewY(-30deg) rotate(60deg);	
+    overflow: hidden;
+    opacity: 0;
+    transition: all .2s;
 
-    // &-1 {
-    //     animation: appear 1.5s 0s 1 ease-out forwards;
-    // }
-    // &-2 {
-    //     animation: appear 1.5s .2s 1 ease-out forwards;
-    // }
-    // &-3 {
-    //     animation: appear 1.5s .4s 1 ease-out forwards;
-    // }
-    // &-4 {
-    //     animation: appear 1.5s .6s 1 ease-out forwards;
-    // }
-    // &-5 {
-    //     animation: appear 1.5s .8s 1 ease-out forwards;
-    // }
-    // &-6 {
-    //     animation: appear 1.5s 1s 1 ease-out forwards;
-    // }
-    // &-7 {
-    //     animation: appear 1.5s 1.2s 1 ease-out forwards;
-    // }
-    // &-8 {
-    //     animation: appear 1.5s 1.4s 1 ease-out forwards;
-    // }
-    // &-9 {
-    //     animation: appear 1.5s 1.6s 1 ease-out forwards;
-    // }
-    // &-10 {
-    //     animation: appear 1.5s 1.8s 1 ease-out forwards;
-    // }
-    // &-11 {
-    //     animation: appear 1.5s 2s 1 ease-out forwards;
-    // }
-    // &-12 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
-    // &-13 {
-    //     animation: appear 1.5s 2.4s 1 ease-out forwards;
-    // }
-    // &-14 {
-    //     animation: appear 1.5s 2.6s 1 ease-out forwards;
-    // }
-    // &-15 {
-    //     animation: appear 1.5s 2.8s 1 ease-out forwards;
-    // }
-    // &-16 {
-    //     animation: appear 1.5s 3s 1 ease-out forwards;
-    // }
-    // &-17 {
-    //     animation: appear 1.5s 3.2s 1 ease-out forwards;
-    // }
-    // &-18 {
-    //     animation: appear 1.5s 3.4s 1 ease-out forwards;
-    // }
-    // &-19 {
-    //     animation: appear 1.5s 3.6s 1 ease-out forwards;
-    // }
-    // &-20 {
-    //     animation: appear 1.5s 3.8s 1 ease-out forwards;
-    // }
-    // &-21 {
-    //     animation: appear 1.5s 4s 1 ease-out forwards;
-    // }
-    // &-22 {
-    //     animation: appear 1.5s 4.2s 1 ease-out forwards;
-    // }
-    // &-23 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
-    // &-24 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
-    // &-25 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
-    // &-26 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
-    // &-27 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
-    // &-28 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
-    // &-29 {
-    //     animation: appear 1.5s 2.2s 1 ease-out forwards;
-    // }
+    &:hover {
+    background-color: $color-primary;
+    }
+}
+
+.grid .hex-container * {
+	visibility: visible;
+	// border: 1px solid blue;
+	// background-image: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.grid .hex-container:nth-child(1n+1) {
+	margin: 0.5%;
+}
+
+.grid .hex-container:nth-child(14n+8), 
+.grid .hex-container:nth-child(14n+9), 
+.grid .hex-container:nth-child(14n+10), 
+.grid .hex-container:nth-child(14n+11), 
+.grid .hex-container:nth-child(14n+12), 
+.grid .hex-container:nth-child(14n+13), 
+.grid .hex-container:nth-child(14n+14) {
+    margin-top: -2.9285714285%;
+    margin-bottom: -2.9285714285%;
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+
+.grid .hex-container:nth-child(14n+8) { 
+    // margin-left: 7.5%;
+    margin-left: 1%;
 }

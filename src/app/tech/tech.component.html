@@ -1,47 +1,17 @@
 <section class="tech">
-  <div class="tech__category">
-    <h2>Languages</h2>
-    <div class="tech__images">
-      <img src="assets/csharp.png" alt="aspNetCore logo" class="tech__image img-1">
-      <img src="assets/Portfolio_images/python.png" alt="angular logo" class="tech__image img-2">
-      <img src="assets/Rlogo.svg" alt="R logo" class="tech__image img-3">
-      <img src="assets/Portfolio_images/JavaScript.png" alt="es6 logo" class="tech__image img-4">
-      <img src="assets/ts.png" alt="ts logo" class="tech__image img-5">
-      <img src="assets/Portfolio_images/HTML.png" alt="html5 logo" class="tech__image img-6">
-      <img src="assets/Portfolio_images/CSS.png" alt="css3 logo" class="tech__image img-7">
-    </div>
-    <h2>Frameworks & Libraries</h2>
-    <div class="tech__images">
-      <img src="assets/Portfolio_images/angular.png" alt="angular logo" class="tech__image img-8">
-      <img src="assets/Portfolio_images/c-sharp.png" alt="aspNetCore logo" class="tech__image img-9">
-      <img src="assets/Portfolio_images/bootstrap.png" alt="bootstrap logo" class="tech__image img-10">
-      <img src="assets/Portfolio_images/expressjs.png" alt="express logo" class="tech__image img-11">
-      <img src="assets/Flask.png" alt="flask logo" class="tech__image img-12">
-      <img src="assets/Portfolio_images/django.png" alt="django logo" class="tech__image img-13">
-      <img src="assets/Portfolio_images/jQuery.png" alt="jquery logo" class="tech__image img-14">
-      <img src="assets/mongoose.png" alt="mongoose logo" class="tech__image img-15">
-      <img src="assets/react.png" alt="react logo" class="tech__image img-16">
-      <img src="assets/scikit-learn.png" alt="scikit learn logo" class="tech__image img-17">
-    </div>
-    <h2>Databases</h2>
-    <div class="tech__images">
-      <img src="assets/Portfolio_images/mysql.png" alt="mysql logo" class="tech__image img-18">
-      <img src="assets/Portfolio_images/mongodb.png" alt="mongo logo" class="tech__image img-19">
-      <img src="assets/Portfolio_images/sqlite.png" alt="sqlite logo" class="tech__image img-20">
-      <img src="assets/Pg_logo.png" alt="postgres logo" class="tech__image img-21">
-      <img src="assets/firebase.png" alt="firebase logo" class="tech__image img-22">
-    </div>
-    <h2>Dev Tools</h2>
-    <div class="tech__images">
-      <img src="assets/Portfolio_images/ajax.png" alt="ajax logo" class="tech__image img-23">
-      <img src="assets/Git.png" alt="git logo" class="tech__image img-24">
-      <img src="assets/Portfolio_images/github.png" alt="github logo" class="tech__image img-25">
-      <img src="assets/Portfolio_images/nodejs.png" alt="node logo" class="tech__image img-26">
-      <img src="assets/Sass.png" alt="sass logo" class="tech__image img-27">
-      <img src="assets/Portfolio_images/socket.png" alt="socket logo" class="tech__image img-28">
-      <img src="assets/ubuntu.png" alt="ubuntu logo" class="tech__image img-29">
-      <img src="assets/vim.png" alt="vim logo" class="tech__image img-30">
-      <img src="assets/vscode.png" alt="vscode logo" class="tech__image img-31">
-    </div>
-  </div>
+
+  <!-- <div class="bg-video">
+    <video class="bg-video__content" muted autoplay loop>
+      <source src='assets/MatrixText.mp4' type="video/mp4" />
+      Your browser is not supported!
+    </video>
+  </div> -->
+
+  <!-- <h2>Technologies in my toolbox:</h2> -->
+
+  <ul class="grid clear">
+    <li class="hex-container" *ngFor="let i of images">
+      <div class="hexagon img-{{i}}"><p>{{ i }}</p></div>
+    </li> 
+  </ul>
 </section>

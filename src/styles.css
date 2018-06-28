@@ -42,6 +42,11 @@ body {
   .header__title {
     text-align: center; }
 
+.clear:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 body {
   font-weight: 400;
   line-height: 1.6;
@@ -119,98 +124,218 @@ body {
 .u-color-grey {
   color: grey; }
 
+.u-center {
+  text-align: center !important; }
+
 .img-1 {
-  animation: appear 1s 0.1s 1 ease-out forwards; }
+  animation: appear 1s 0.1s 1 ease-out forwards;
+  background-image: url("assets/angular.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-2 {
-  animation: appear 1s 0.2s 1 ease-out forwards; }
+  animation: appear 1s 0.2s 1 ease-out forwards;
+  background-image: url("assets/aspNetCore.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-3 {
-  animation: appear 1s 0.3s 1 ease-out forwards; }
+  animation: appear 1s 0.3s 1 ease-out forwards;
+  background-image: url("assets/csharp.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-4 {
-  animation: appear 1s 0.4s 1 ease-out forwards; }
+  animation: appear 1s 0.4s 1 ease-out forwards;
+  background-image: url("assets/Python.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-5 {
-  animation: appear 1s 0.5s 1 ease-out forwards; }
+  animation: appear 1s 0.5s 1 ease-out forwards;
+  background-image: url("assets/css3.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-6 {
-  animation: appear 1s 0.6s 1 ease-out forwards; }
+  animation: appear 1s 0.6s 1 ease-out forwards;
+  background-image: url("assets/html5.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-7 {
-  animation: appear 1s 0.7s 1 ease-out forwards; }
+  animation: appear 1s 0.7s 1 ease-out forwards;
+  background-image: url("assets/es6.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-8 {
-  animation: appear 1s 0.8s 1 ease-out forwards; }
+  animation: appear 1s 0.8s 1 ease-out forwards;
+  background-image: url("assets/django.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-9 {
-  animation: appear 1s 0.9s 1 ease-out forwards; }
+  animation: appear 1s 0.9s 1 ease-out forwards;
+  background-image: url("assets/mongo.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-10 {
-  animation: appear 1s 1s 1 ease-out forwards; }
+  animation: appear 1s 1s 1 ease-out forwards;
+  background-image: url("assets/react.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-11 {
-  animation: appear 1s 1.1s 1 ease-out forwards; }
+  animation: appear 1s 1.1s 1 ease-out forwards;
+  background-image: url("assets/Sass.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-12 {
-  animation: appear 1s 1.2s 1 ease-out forwards; }
+  animation: appear 1s 1.2s 1 ease-out forwards;
+  background-image: url("assets/Flask.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-13 {
-  animation: appear 1s 1.3s 1 ease-out forwards; }
+  animation: appear 1s 1.3s 1 ease-out forwards;
+  background-image: url("assets/Git.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-14 {
-  animation: appear 1s 1.4s 1 ease-out forwards; }
+  animation: appear 1s 1.4s 1 ease-out forwards;
+  background-image: url("assets/javascript.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-15 {
-  animation: appear 1s 1.5s 1 ease-out forwards; }
+  animation: appear 1s 1.5s 1 ease-out forwards;
+  background-image: url("assets/mongoose.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-16 {
-  animation: appear 1s 1.6s 1 ease-out forwards; }
+  animation: appear 1s 1.6s 1 ease-out forwards;
+  background-image: url("assets/Rlogo.svg");
+  background-position: center;
+  background-size: contain; }
 
 .img-17 {
-  animation: appear 1s 1.7s 1 ease-out forwards; }
+  animation: appear 1s 1.7s 1 ease-out forwards;
+  background-image: url("assets/ubuntu.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-18 {
-  animation: appear 1s 1.8s 1 ease-out forwards; }
+  animation: appear 1s 1.8s 1 ease-out forwards;
+  background-image: url("assets/vim.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-19 {
-  animation: appear 1s 1.9s 1 ease-out forwards; }
+  animation: appear 1s 1.9s 1 ease-out forwards;
+  background-image: url("assets/firebase.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-20 {
-  animation: appear 1s 2s 1 ease-out forwards; }
+  animation: appear 1s 2s 1 ease-out forwards;
+  background-image: url("assets/vscode.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-21 {
-  animation: appear 1s 2.1s 1 ease-out forwards; }
+  animation: appear 1s 2.1s 1 ease-out forwards;
+  background-image: url("assets/MySQL.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-22 {
-  animation: appear 1s 2.2s 1 ease-out forwards; }
+  animation: appear 1s 2.2s 1 ease-out forwards;
+  background-image: url("assets/bootstrap-stack.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-23 {
-  animation: appear 1s 2.3s 1 ease-out forwards; }
+  animation: appear 1s 2.3s 1 ease-out forwards;
+  background-image: url("assets/scikit-learn.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-24 {
-  animation: appear 1s 2.4s 1 ease-out forwards; }
+  animation: appear 1s 2.4s 1 ease-out forwards;
+  background-image: url("assets/Pg_logo.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-25 {
-  animation: appear 1s 2.5s 1 ease-out forwards; }
+  animation: appear 1s 2.5s 1 ease-out forwards;
+  background-image: url("assets/jquery-logo.gif");
+  background-position: center;
+  background-size: contain; }
 
 .img-26 {
-  animation: appear 1s 2.6s 1 ease-out forwards; }
+  animation: appear 1s 2.6s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/ajax.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-27 {
-  animation: appear 1s 2.7s 1 ease-out forwards; }
+  animation: appear 1s 2.7s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/expressjs.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-28 {
-  animation: appear 1s 2.8s 1 ease-out forwards; }
+  animation: appear 1s 2.8s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/nodejs.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-29 {
-  animation: appear 1s 2.9s 1 ease-out forwards; }
+  animation: appear 1s 2.9s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/github.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-30 {
-  animation: appear 1s 3s 1 ease-out forwards; }
+  animation: appear 1s 3s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/php.png");
+  background-position: center;
+  background-size: contain; }
 
 .img-31 {
-  animation: appear 1s 3.1s 1 ease-out forwards; }
+  animation: appear 1s 3.1s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/MEAN.png");
+  background-position: center;
+  background-size: contain; }
+
+.img-32 {
+  animation: appear 1s 3.2s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/materialize.png");
+  background-position: center;
+  background-size: contain; }
+
+.img-33 {
+  animation: appear 1s 3.3s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/d3.png");
+  background-position: center;
+  background-size: contain; }
+
+.img-34 {
+  animation: appear 1s 3.4s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/sqlite.png");
+  background-position: center;
+  background-size: contain; }
+
+.img-35 {
+  animation: appear 1s 3.5s 1 ease-out forwards;
+  background-image: url("assets//Portfolio_images/socket.png");
+  background-position: center;
+  background-size: contain; }
 
 .footer {
   background-color: var(--color-grey-dark-3);
@@ -311,6 +436,20 @@ body {
     margin-bottom: 5rem; }
   .btn:hover {
     background-color: green; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 .cube__inner-border {
   position: absolute;
@@ -566,10 +705,64 @@ input[type="text"] {
       color: var(--color-white);
       cursor: pointer; }
 
-.tech__images {
-  display: flex; }
+.tech {
+  width: 100vw;
+  position: relative; }
 
-.tech__image {
-  padding: 1rem;
-  height: 10rem;
-  opacity: 0; }
+.grid {
+  position: relative;
+  width: 90%;
+  margin: 0 auto; }
+
+.hex-container {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 12.85714285714286%;
+  padding: 0 0 14.87860145166612% 0;
+  transform: rotate(-60deg) skewY(30deg);
+  background: #fd005f;
+  overflow: hidden;
+  visibility: hidden; }
+  .hex-container p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: -50%, -50%; }
+
+.hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4A849F;
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
+  opacity: 0;
+  transition: all .2s; }
+  .hexagon:hover {
+    background-color: #4A849F; }
+
+.grid .hex-container * {
+  visibility: visible;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.grid .hex-container:nth-child(1n+1) {
+  margin: 0.5%; }
+
+.grid .hex-container:nth-child(14n+8),
+.grid .hex-container:nth-child(14n+9),
+.grid .hex-container:nth-child(14n+10),
+.grid .hex-container:nth-child(14n+11),
+.grid .hex-container:nth-child(14n+12),
+.grid .hex-container:nth-child(14n+13),
+.grid .hex-container:nth-child(14n+14) {
+  margin-top: -2.9285714285%;
+  margin-bottom: -2.9285714285%;
+  transform: translateX(50%) rotate(-60deg) skewY(30deg); }
+
+.grid .hex-container:nth-child(14n+8) {
+  margin-left: 1%; }
