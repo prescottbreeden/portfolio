@@ -1,12 +1,15 @@
 .tech {
     width: 100vw;
     position: relative;
+    background-image: linear-gradient(to top right, var(--color-white), var(--color-grey-light));
 }
 
 .grid {
     position: relative;
     width: 90%;
-    margin: 2rem auto 4rem auto;
+    margin: 0 auto;
+    padding: 2rem 2rem 4rem 2rem;
+    
 }
 
 .hex-container {
@@ -41,7 +44,7 @@
     opacity: 0;
     transition: all .2s;
     color: white;
-    box-shadow: 0rem 1rem 1rem rgba(black, .4);
+    box-shadow: 0rem 1rem 1rem rgba(black, .2);
 
     &:hover {
     background-color: $color-primary;
