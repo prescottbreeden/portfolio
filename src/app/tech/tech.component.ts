@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tech.component.css']
 })
 export class TechComponent implements OnInit {
-total_images = 35;
+total_images = 28;
 images = [];
 
   constructor() { }

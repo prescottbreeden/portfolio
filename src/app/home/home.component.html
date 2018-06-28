@@ -8,3 +8,7 @@
         <div class="about__link" [routerLink]="['portfolio']">Portfolio</div>
     </div>
 </section>
+
+<div class="hidden">
+    <div *ngFor="let i of images" class="preload-{{i}}"></div>
+</div>

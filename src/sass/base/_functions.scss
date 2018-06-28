@@ -1,54 +1,54 @@
 $technologies: 
-    "angular.png", 
-    "aspNetCore.png", 
-    "csharp.png",
-    "Python.png", 
-    "css3.png", 
-    "html5.png",
-    "es6.png",
-    "django.png", 
-    "mongo.png", 
-    "react.png", 
-    "Sass.png",
-    "Flask.png",
-    "Git.png",
-    "javascript.png",
-    "mongoose.png",
-    "Rlogo.svg",
-    "ubuntu.png",
-    "vim.png",
-    "firebase.png",
-    "vscode.png",
-    "MySQL.png",
-    "bootstrap-stack.png",
-    "scikit-learn.png",
-    "Pg_logo.png",
-    "jquery-logo.gif",
-    "/Portfolio_images/ajax.png",
-    "/Portfolio_images/expressjs.png",
-    "/Portfolio_images/nodejs.png",
-    "/Portfolio_images/github.png",
-    "/Portfolio_images/php.png",
-    "/Portfolio_images/MEAN.png",
-    "/Portfolio_images/materialize.png",
-    "/Portfolio_images/d3.png",
-    "/Portfolio_images/sqlite.png",
-    "/Portfolio_images/socket.png"
+    "g_angular_ai.png", 
+    "g_dotnetcore_ai.png", 
+    "g_cs_ai.png",
+    "g_python_ai.png", 
+    "g_css_ai.png", 
+    "g_html_ai.png",
+    "g_django_ai.png", 
+    "g_mongo_ai.png", 
+    "g_react_ai.png", 
+    "g_sass_ai.png",
+    "g_flask_ai.png",
+    "g_git_ai.png",
+    "g_js_ai.png",
+    "g_r_ai.png",
+    "g_ubuntu_ai.png",
+    "g_vim_ai.png",
+    "g_firebase_ai.png",
+    "g_vscode_ai.png",
+    "g_sql_ai.png",
+    "g_bootstrap_ai.png",
+    "g_scikit_ai.png",
+    "g_jquery_ai.png",
+    "g_postman_ai.png",
+    "g_express_ai.png",
+    "g_nodejs_ai.png",
+    "g_github_ai.png",
+    "g_aws_ai.png",
+    "g_sqlite_ai.png",
+
     ;
 
 $total: length($technologies);
 
 @mixin beehive-appear($wait) {
-   animation: appear 1s #{$wait * .025}s 1 ease-out forwards; 
+   animation: appear 1.25s #{$wait * .1}s 1 ease-out forwards; 
 }
 
 @for $i from 1 through $total {
     .img-#{$i} { 
         @include beehive-appear($i); 
         background-image: url('assets/#{nth($technologies, $i)}');
+        // background-image: url('assets/g_css_ai.png');
         background-position: center;
         background-size: contain;
     }
 }
 
+@for $i from 1 through $total {
+    .preload-#{$i} { 
+        background-image: url('assets/#{nth($technologies, $i)}');
+    }
+}
 

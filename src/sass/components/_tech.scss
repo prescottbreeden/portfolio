@@ -6,7 +6,7 @@
 .grid {
     position: relative;
     width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto 4rem auto;
 }
 
 .hex-container {
@@ -41,6 +41,7 @@
     opacity: 0;
     transition: all .2s;
     color: white;
+    box-shadow: 0rem 1rem 1rem rgba(black, .4);
 
     &:hover {
     background-color: $color-primary;
