@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css compile:sass-quiz prefix:css-quiz compress:css-quiz",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css compile:sass prefix:css compress:css",
     "watch:sass": "node-sass src/sass/main.scss src/styles.css -w",
     "compile:sass": "node-sass src/sass/main.scss src/styles.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' styles.css -o styles.prefix.css",
