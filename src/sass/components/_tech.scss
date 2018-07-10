@@ -1,7 +1,51 @@
 .tech {
     width: 100vw;
     position: relative;
-    background-image: linear-gradient(to top right, var(--color-white), var(--color-grey-light));
+    background-image: linear-gradient(to top right, 
+						var(--color-white), 
+						var(--color-grey-light));
+	
+	&__header {
+		margin-top: 3rem;
+		text-align: center;
+		background-image: linear-gradient(to top right, 
+						$color-primary-dark,
+						$color-primary);
+		color: var(--color-grey-light);
+
+	}
+
+	&__overview {
+		padding-top: 2rem;
+		padding-bottom: 5rem;
+		display: flex;
+		justify-content: space-around; 
+		background-color: $color-primary;
+	}
+
+	&__details {
+		background-image: linear-gradient(to top right, 
+						$color-primary-dark,
+						$color-primary);
+		color: var(--color-grey-light);
+		text-align: center;
+		flex-basis: 20%;
+		padding: 1rem 2rem;
+		box-shadow: 0 1rem 2rem rgba(black, .5);
+
+		&--header {
+			border-bottom: 1px solid black;
+
+		}
+	
+		&--list {
+			margin-top: 1rem;
+			list-style: none;
+		}
+	}
+
+
+
 }
 
 .grid {

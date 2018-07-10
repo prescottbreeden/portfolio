@@ -751,6 +751,29 @@ input[type="text"] {
   width: 100vw;
   position: relative;
   background-image: linear-gradient(to top right, var(--color-white), var(--color-grey-light)); }
+  .tech__header {
+    margin-top: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to top right, #1B3440, #4A849F);
+    color: var(--color-grey-light); }
+  .tech__overview {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #4A849F; }
+  .tech__details {
+    background-image: linear-gradient(to top right, #1B3440, #4A849F);
+    color: var(--color-grey-light);
+    text-align: center;
+    flex-basis: 20%;
+    padding: 1rem 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+    .tech__details--header {
+      border-bottom: 1px solid black; }
+    .tech__details--list {
+      margin-top: 1rem;
+      list-style: none; }
 
 .grid {
   position: relative;
