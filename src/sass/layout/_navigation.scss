@@ -4,10 +4,10 @@
     left: 0;
     height: 5rem;
     z-index: 300;
-    background-color: var(--color-grey-dark-3);
+    background-color: $color-black-light;
     width: 100%;
     // color: var(--color-grey-light-1);
-    color: var(--color-white);
+    color: $color-white;
     
     &__sidebar {
         // position: fixed;
@@ -27,6 +27,7 @@
         flex-basis: 0 0 20%;
         align-items: center;
         text-align: center;
+        text-transform: uppercase;
         position: relative;
         padding: 1rem;
         display: flex;
@@ -62,7 +63,7 @@
         height: 2rem;
         width: 2rem;
         // fill: var(--color-grey-light-1);
-        fill: var(--color-white);
+        fill: $color-white;
         outline: none;
         margin-right: .5rem;
 
