@@ -4,13 +4,7 @@
             <svg class="navigation__icon">
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-profile"></use>
             </svg>
-            <span>About</span>
-        </div>
-        <div class="navigation__item" [routerLink]="['tech']">
-            <svg class="navigation__icon navigation__icon--about">
-                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-database"></use>
-            </svg>
-            <span>Tech</span>
+            <span>About Me</span>
         </div>
         <div class="navigation__item" [routerLink]="['portfolio']">
             <svg class="navigation__icon navigation__icon--portfolio">
@@ -18,13 +12,19 @@
             </svg>
             <span>Portfolio</span>
         </div>
+        <div class="navigation__item" [routerLink]="['tech']">
+            <svg class="navigation__icon navigation__icon--about">
+                <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-database"></use>
+            </svg>
+            <span>Technology</span>
+        </div>
         <div class="navigation__item" [routerLink]="['contact']">
             <svg class="navigation__icon navigation__icon--contact">
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-envelop"></use>
             </svg>
             <span>Contact</span>
         </div>
-        <div class="navigation__item"  *ngIf="!terminalStatus" (click)="toggleTerminal()" [routerLink]="['terminal']">
+        <!-- <div class="navigation__item"  *ngIf="!terminalStatus" (click)="toggleTerminal()" [routerLink]="['terminal']">
             <svg class="navigation__icon navigation__icon--open-terminal">
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-terminal"></use>
             </svg>
@@ -35,6 +35,6 @@
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-terminal"></use>
             </svg>
             <span>Terminal</span>
-        </div>
+        </div> -->
     </div>
 </div>
