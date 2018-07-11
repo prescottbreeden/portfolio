@@ -2,8 +2,8 @@
     width: 100vw;
     position: relative;
     background-image: linear-gradient(to top right, 
-						var(--color-white), 
-						var(--color-grey-light));
+						$color-white, 
+						$color-grey-light);
 	
 	&__header {
 		margin-top: 3rem;
@@ -11,7 +11,7 @@
 		background-image: linear-gradient(to top right, 
 						$color-primary-dark,
 						$color-primary);
-		color: var(--color-grey-light);
+		color: $color-grey-light;
 
 	}
 
@@ -27,7 +27,7 @@
 		background-image: linear-gradient(to top right, 
 						$color-primary-dark,
 						$color-primary);
-		color: var(--color-grey-light);
+		color: $color-grey-light;
 		text-align: center;
 		flex-basis: 20%;
 		padding: 1rem 2rem;
@@ -63,7 +63,6 @@
     width: 12.85714285714286%;
     padding: 0 0 14.87860145166612% 0;
     transform: rotate(-60deg) skewY(30deg);
-    background: #fd005f;
     overflow: hidden;
     visibility: hidden;
     
@@ -81,13 +80,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // background-color: var(--color-white);
     background-color: $color-primary;
     transform: skewY(-30deg) rotate(60deg);	
     overflow: hidden;
     opacity: 0;
     transition: all .2s;
-    color: white;
+    color: $color-white;
     box-shadow: 0rem 1rem 1rem rgba(black, .2);
 
     &:hover {
