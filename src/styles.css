@@ -392,12 +392,11 @@ body {
     color: var(--color-white); }
 
 .header {
-  height: 100vh;
-  background-image: linear-gradient(to right, rgba(85, 85, 85, 0.6), rgba(85, 85, 85, 0.6)), url("assets/keyboard.jpg");
+  min-height: 40rem;
+  background-image: linear-gradient(to bottom, rgba(74, 132, 159, 0.6), rgba(63, 113, 136, 0.6)), url("assets/keyboard.jpg");
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative; }
   .header__title {
     width: 100%;
@@ -761,16 +760,15 @@ input[type="text"] {
   .tech__header {
     margin-top: 3rem;
     text-align: center;
-    background-image: linear-gradient(to top right, #3f7188, #4A849F);
-    color: #ddd; }
+    background-color: #fff; }
   .tech__overview {
     padding-top: 2rem;
     padding-bottom: 5rem;
     display: flex;
     justify-content: space-around;
-    background-color: #4A849F; }
+    background-color: #fff; }
   .tech__details {
-    background-image: linear-gradient(to top right, #3f7188, #4A849F);
+    background-image: linear-gradient(to top right, #28b485, #7ed56f);
     color: #ddd;
     text-align: center;
     flex-basis: 20%;

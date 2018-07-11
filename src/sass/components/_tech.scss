@@ -8,11 +8,7 @@
 	&__header {
 		margin-top: 3rem;
 		text-align: center;
-		background-image: linear-gradient(to top right, 
-						$color-primary-dark,
-						$color-primary);
-		color: $color-grey-light;
-
+        background-color: #fff;
 	}
 
 	&__overview {
@@ -20,13 +16,13 @@
 		padding-bottom: 5rem;
 		display: flex;
 		justify-content: space-around; 
-		background-color: $color-primary;
+		background-color: #fff;
 	}
 
 	&__details {
 		background-image: linear-gradient(to top right, 
-						$color-primary-dark,
-						$color-primary);
+						$color-green-dark,
+						$color-green-light);
 		color: $color-grey-light;
 		text-align: center;
 		flex-basis: 20%;
