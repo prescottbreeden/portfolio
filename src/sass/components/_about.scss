@@ -1,14 +1,19 @@
 .about {
     padding: 3rem 5rem;
     background-color: $color-white;
-
+    
     &__text-box {
+        margin-top: 4rem;
+        display: flex;
         margin-bottom: 4rem;
     }
 
-
+    &__heading {
+        flex: 2 20%;
+    }
 
     &__blurb {
+        flex: 5 50%;
         hyphens: manual;
     }
 
@@ -33,5 +38,24 @@
             color: $color-white;
             cursor: pointer;
         }
+    }
+
+    &__services {
+        margin-top: 12rem;
+
+        &--container {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &--list {
+            list-style: none;
+        }
+
+    }
+
+    &__courses {
+        margin-top: 12rem;
     }
 }

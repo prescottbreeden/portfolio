@@ -12,7 +12,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #222; }
+  background-color: #222;
+  max-width: 114rem;
+  margin: 0 auto; }
 
 .container {
   display: flex;
@@ -390,7 +392,8 @@ body {
       flex: 1 100%;
       outline: none;
       cursor: pointer;
-      transition: all .2s; }
+      transition: all .2s;
+      z-index: 100; }
       .footer__nav--item:hover {
         border-top: 0.3rem solid #28b485;
         color: #28b485; }
@@ -418,23 +421,16 @@ body {
 .header {
   height: 90vh;
   margin-top: 5rem;
-  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.1), rgba(34, 34, 34, 0.1)), url("assets/pb_logo.png");
-  background-position: center bottom;
-  background-size: contain;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0)), url("assets/p_logo5.png");
+  background-position: center center;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative; }
   .header__logo {
     position: relative; }
-    .header__logo-img {
-      position: absolute;
-      top: 0%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 80rem;
-      width: auto; }
   .header__title {
-    width: 100%;
+    width: 500%;
     color: #f7f7f7;
     position: absolute;
     top: 50%;
@@ -460,6 +456,7 @@ body {
     transform: translateX(-50%);
     color: #F2845C; }
   .header__blink {
+    font-size: 2.5rem;
     animation: blink 1.5s step-end infinite; }
 
 .navigation {
@@ -775,8 +772,13 @@ input[type="text"] {
   padding: 3rem 5rem;
   background-color: #f7f7f7; }
   .about__text-box {
+    margin-top: 4rem;
+    display: flex;
     margin-bottom: 4rem; }
+  .about__heading {
+    flex: 2 20%; }
   .about__blurb {
+    flex: 5 50%;
     hyphens: manual; }
   .about__links {
     display: flex;
@@ -793,6 +795,16 @@ input[type="text"] {
       background-color: #4A849F;
       color: #f7f7f7;
       cursor: pointer; }
+  .about__services {
+    margin-top: 12rem; }
+    .about__services--container {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-around; }
+    .about__services--list {
+      list-style: none; }
+  .about__courses {
+    margin-top: 12rem; }
 
 .tech {
   width: 100vw;

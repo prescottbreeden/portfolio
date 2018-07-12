@@ -31,6 +31,7 @@
             outline: none;
             cursor: pointer;
             transition: all .2s;
+            z-index: 100;
 
             &:hover {
                 border-top: .3rem solid $color-green-dark;
