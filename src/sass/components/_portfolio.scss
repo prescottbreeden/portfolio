@@ -1,0 +1,72 @@
+.portfolio {
+    min-height: 50vh;
+    background-color: $color-white;
+}
+
+.divider {
+    margin: 6rem auto;
+    width: 40%;
+    height: 1rem;
+    border-bottom: 2px solid rgba($color-black-light, .6);
+}
+
+
+.powder {
+    min-height: 50vh;
+    background-color: $color-white;
+    position: relative;
+    text-align: center;
+    margin-left: 3rem;
+
+    &__description {
+        width: 30%;
+
+        &--header {
+            padding-top: 4rem;
+        }
+
+        &--text {
+            margin-top: 4rem;
+        }
+    }
+
+    &__tech {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__desktop {
+        &--img {
+            position: absolute;
+            bottom: 0;
+            right: 30rem;
+            height: 50rem;
+            width: auto;
+        }
+    }
+
+    &__tablet {
+
+        &--img {
+            position: absolute;
+            bottom: 0;
+            right: 10rem;
+
+            height: 30rem;
+            width: auto;
+        }
+    }
+
+    &__mobile {
+
+        &--img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            height: 20rem;
+            width: auto;
+        }
+    }
+}

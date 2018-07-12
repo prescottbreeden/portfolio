@@ -13,7 +13,6 @@ html {
 
 body {
   background-color: #222;
-  max-width: 114rem;
   margin: 0 auto; }
 
 .container {
@@ -728,6 +727,51 @@ input[type="text"] {
   width: 100%;
   height: auto;
   object-fit: contain; }
+
+.portfolio {
+  min-height: 50vh;
+  background-color: #f7f7f7; }
+
+.divider {
+  margin: 6rem auto;
+  width: 40%;
+  height: 1rem;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.6); }
+
+.powder {
+  min-height: 50vh;
+  background-color: #f7f7f7;
+  position: relative;
+  text-align: center;
+  margin-left: 3rem; }
+  .powder__description {
+    width: 30%; }
+    .powder__description--header {
+      padding-top: 4rem; }
+    .powder__description--text {
+      margin-top: 4rem; }
+  .powder__tech {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .powder__desktop--img {
+    position: absolute;
+    bottom: 0;
+    right: 30rem;
+    height: 50rem;
+    width: auto; }
+  .powder__tablet--img {
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
+    height: 30rem;
+    width: auto; }
+  .powder__mobile--img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20rem;
+    width: auto; }
 
 .terminal {
   font-size: 2rem;
