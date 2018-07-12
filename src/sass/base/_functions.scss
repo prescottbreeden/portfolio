@@ -1,32 +1,32 @@
 $technologies: 
-    "g_angular_ai.png", 
-    "g_dotnetcore_ai.png", 
-    "g_cs_ai.png",
-    "g_python_ai.png", 
-    "g_css_ai.png", 
-    "g_html_ai.png",
+    "g_angular.png", 
+    "g_aws.png",
+    "g_bootstrap.png",
+    "g_cs.png",
+    "g_css.png", 
     "g_django_ai.png", 
-    "g_mongo_ai.png", 
-    "g_react_ai.png", 
-    "g_sass_ai.png",
+    "g_dotnetcore_ai.png", 
+    "g_express_ai.png",
+    "g_firebase_ai.png",
     "g_flask_ai.png",
     "g_git_ai.png",
+    "g_github_ai.png",
+    "g_html_ai.png",
+    "g_jquery.png",
     "g_js_ai.png",
+    "g_mongo_ai.png", 
+    "g_nodejs_ai.png",
+    "g_postman_ai.png",
+    "g_python_ai.png", 
+    "g_react_ai.png", 
+    "g_sass_ai.png",
+    "g_scikit_ai.png",
+    "g_sql_ai.png",
+    "g_sqlite_ai.png",
     "g_r_ai.png",
     "g_ubuntu_ai.png",
     "g_vim_ai.png",
-    "g_firebase_ai.png",
     "g_vscode_ai.png",
-    "g_sql_ai.png",
-    "g_bootstrap_ai.png",
-    "g_scikit_ai.png",
-    "g_jquery_ai.png",
-    "g_postman_ai.png",
-    "g_express_ai.png",
-    "g_nodejs_ai.png",
-    "g_github_ai.png",
-    "g_aws_ai.png",
-    "g_sqlite_ai.png",
 
     ;
 
@@ -41,8 +41,8 @@ $total: length($technologies);
         @include beehive-appear($i); 
         background-image: url('assets/#{nth($technologies, $i)}');
         // background-image: url('assets/g_css_ai.png');
+        background-size: cover;
         background-position: center;
-        background-size: contain;
     }
 }
 
