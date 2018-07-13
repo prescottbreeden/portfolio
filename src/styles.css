@@ -1320,6 +1320,7 @@ input[type="text"] {
     position: relative;
     border: 1px solid #222; }
     .tech__logo-box--img {
+      padding: .5rem;
       position: absolute;
       top: 50%;
       left: 50%;
