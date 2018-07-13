@@ -1,33 +1,32 @@
 $technologies: 
-    "g_angular.png", 
-    "g_aws.png",
-    "g_bootstrap.png",
-    "g_cs.png",
-    "g_css.png", 
-    "g_django.png", 
-    "g_dotnet.png", 
-    "g_express.png",
-    "g_firebase.png",
-    "g_flask.png",
-    "g_git.png",
-    "g_github.png",
-    "g_html.png",
-    "g_jquery.png",
-    "g_js.png",
-    "g_mongo.png", 
-    "g_nodejs.png",
-    "g_postman.png",
-    "g_python.png", 
-    "g_react.png", 
-    "g_sass.png",
-    "g_scikit.png",
-    "g_sql.png",
-    "g_sqlite.png",
-    "g_r.png",
-    "g_ubuntu.png",
-    "g_vim.png",
-    "g_vscode.png",
-
+    "angular", 
+    "aws",
+    "bootstrap",
+    "csharp",
+    "css3", 
+    "django", 
+    "dotnet", 
+    "express",
+    "firebase",
+    "flask",
+    "git",
+    "github",
+    "html5",
+    "jquery",
+    "javascript",
+    "mongodb", 
+    "nodejs",
+    "postman",
+    "python", 
+    "react", 
+    "sass",
+    "scikit-learn",
+    "sql",
+    "sqlite",
+    "r",
+    "ubuntu",
+    "vim",
+    "vscode",
     ;
 
 $total: length($technologies);
@@ -39,16 +38,44 @@ $total: length($technologies);
 @for $i from 1 through $total {
     .img-#{$i} { 
         @include beehive-appear($i); 
-        background-image: url('assets/#{nth($technologies, $i)}');
-        // background-image: url('assets/g_css_ai.png');
+        background-image: linear-gradient(to bottom, 
+                                    rgba($color-red-light, .0), 
+                                    rgba($color-red-light, .0)),
+                                    url('assets/#{nth($technologies, $i)}.png');
         background-size: cover;
         background-position: center;
+        position: relative;
+        backface-visibility: hidden;
+
+        &:after {
+            content: "#{nth($technologies, $i)}";
+            color: $color-white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            opacity: 0;
+        }
+
+        &:hover {
+
+            background-image: linear-gradient(to bottom, 
+            rgba($color-black, .8), 
+            rgba($color-black, .8)),
+            url('assets/#{nth($technologies, $i)}.png');
+            opacity: 1;
+        }
+
+        &:hover:after {
+            opacity: 1;
+        }
     }
 }
 
 @for $i from 1 through $total {
     .preload-#{$i} { 
-        background-image: url('assets/#{nth($technologies, $i)}');
+        background-image: url('assets/#{nth($technologies, $i)}.png');
     }
 }
 
