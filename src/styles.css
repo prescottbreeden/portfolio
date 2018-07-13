@@ -934,6 +934,9 @@ body {
     letter-spacing: 1.5px; }
     .navigation__item > * {
       height: 100%; }
+  .navigation__link {
+    text-decoration: none;
+    color: #f7f7f7; }
   .navigation__item::before {
     content: "";
     position: absolute;
@@ -1264,7 +1267,7 @@ input[type="text"] {
   padding: 3rem 5rem;
   background-color: #f7f7f7; }
   .about__text-box {
-    margin-top: 4rem;
+    padding-top: 6rem;
     display: flex;
     margin-bottom: 4rem; }
   .about__heading {
@@ -1299,6 +1302,7 @@ input[type="text"] {
     margin-top: 12rem; }
 
 .tech {
+  padding-top: 6rem;
   width: 100vw;
   position: relative;
   background-image: linear-gradient(to top right, #f7f7f7, #ddd); }
@@ -1337,8 +1341,9 @@ input[type="text"] {
 .grid {
   position: relative;
   width: 90%;
+  max-width: 110rem;
   margin: 0 auto;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 2rem 6rem 2rem;
   box-sizing: border-box; }
 
 .hex-container {

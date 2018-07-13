@@ -4,25 +4,36 @@
             <svg class="navigation__icon">
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-profile"></use>
             </svg>
-            <span>About</span>
+            <span>
+                <a href="#about" class="navigation__link">About</a>
+            </span>
         </div>
         <div class="navigation__item" [routerLink]="['portfolio']">
             <svg class="navigation__icon navigation__icon--portfolio">
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-embed2"></use>
             </svg>
-            <span>Portfolio</span>
+            <span>
+                <!-- <a href="#" class="navigation__link">Portfolio</a> -->
+                Portfolio
+            </span>
         </div>
         <div class="navigation__item" [routerLink]="['tech']">
             <svg class="navigation__icon navigation__icon--about">
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-database"></use>
             </svg>
-            <span>Technology</span>
+            <span>
+                <!-- <a href="#tech-top" class="navigation__link">Technology</a> -->
+                Technology
+            </span>
         </div>
         <div class="navigation__item" [routerLink]="['contact']">
             <svg class="navigation__icon navigation__icon--contact">
                 <use xlink:href="assets/icomoon_15_icons/sprite.svg#icon-envelop"></use>
             </svg>
-            <span>Contact</span>
+            <span>
+                <!-- <a href="#" class="navigation__link">Contact</a> -->
+                Contact
+            </span>
         </div>
         <!-- <div class="navigation__item"  *ngIf="!terminalStatus" (click)="toggleTerminal()" [routerLink]="['terminal']">
             <svg class="navigation__icon navigation__icon--open-terminal">

@@ -47,10 +47,8 @@ blurb = {
              so you can focus on writing your app without needing to reinvent
              the wheel. It’s free and open source.`,
 
-  'dotnet': `ASP.NET Core is a free and open-source web framework, and the next
-             generation of ASP.NET developed by the Microsoft. It is a modular
-             framework that runs on both the full .NET Framework, on Windows,
-             and the cross-platform .NET Core`,
+  'dotnet': `ASP.NET Core is a free and open-source modular web framework, and
+             the next generation of ASP.NET, developed by Microsoft.`,
 
   'express': `Express.js, or simply Express, is a web application framework for
               Node.js, released as free and open-source software under the MIT
