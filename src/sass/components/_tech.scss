@@ -29,12 +29,13 @@
         height: 15rem;
         width: 15rem;
         position: relative;
+        border: 1px solid $color-black;
 
         &--img {
-            border: 1px solid $color-black;
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: inline-block;
             height: inherit;
             width: auto;
