@@ -4,69 +4,59 @@
 }
 
 .divider {
-    margin: 6rem auto;
+    margin: 3rem auto 0 auto;
     width: 40%;
     height: 1rem;
     border-bottom: 2px solid rgba($color-black-light, .6);
 }
 
 
-.powder {
+.project {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
     min-height: 50vh;
+    padding: 6rem 3rem 3rem 3rem;
     background-color: $color-white;
-    position: relative;
-    text-align: center;
-    margin-left: 3rem;
 
     &__description {
-        width: 30%;
+        flex: 2 2 20%;
+        text-align: center;
+        // border: 1px dashed orangered;
 
         &--header {
-            padding-top: 4rem;
+            padding: 3rem;
         }
 
         &--text {
-            margin-top: 4rem;
+            // margin-top: 4rem;
         }
     }
 
     &__tech {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+        flex: 1 1 10%;
+        // border: 1px dashed orangered;
+
+        &--list {
+            // margin-top: 4rem;
+            padding: 3rem;
+            list-style: none;
+        }
+
+        &--item {
+            text-align: left;
+        }
     }
 
     &__desktop {
+        flex: 2 2 40%;
+        // border: 1px dashed orangered;
+        text-align: center;
+
         &--img {
-            position: absolute;
-            bottom: 0;
-            right: 30rem;
-            height: 50rem;
+            height: 40rem;
             width: auto;
         }
     }
 
-    &__tablet {
-
-        &--img {
-            position: absolute;
-            bottom: 0;
-            right: 10rem;
-
-            height: 30rem;
-            width: auto;
-        }
-    }
-
-    &__mobile {
-
-        &--img {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-
-            height: 20rem;
-            width: auto;
-        }
-    }
 }
