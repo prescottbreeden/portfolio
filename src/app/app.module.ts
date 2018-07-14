@@ -9,9 +9,6 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { TerminalComponent } from './terminal/terminal.component';
-import { GuiComponent } from './gui/gui.component';
-import { CubeComponent } from './cube/cube.component';
-import { ExplosionComponent } from './explosion/explosion.component';
 import { HomeComponent } from './home/home.component';
 import { TechComponent } from './tech/tech.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -24,9 +21,6 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     FooterComponent,
     TerminalComponent,
-    GuiComponent,
-    CubeComponent,
-    ExplosionComponent,
     HomeComponent,
     TechComponent,
     PortfolioComponent,

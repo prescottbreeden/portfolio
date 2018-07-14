@@ -1,7 +1,6 @@
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TerminalComponent } from './terminal/terminal.component';
-import { CubeComponent } from './cube/cube.component';
 
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

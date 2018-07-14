@@ -1,0 +1,41 @@
+.contact {
+	padding-top: 6rem;
+	background-color: $color-white;
+	min-height: 40rem;
+
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		padding: 3rem;
+	}
+
+	&__header {
+		text-align: center;
+	}
+
+	&__form {
+		padding: 2rem;
+		border-radius: 4px;
+		box-shadow: 0 1rem 2rem rgba($color-black, .5);
+		width: 30%;
+		background-color: $color-grey-light;
+
+		&--input {
+			padding: .5rem;
+			border-raidus: 4px;
+			margin-bottom: 2rem;
+		}
+		
+		&--btn {
+			background-color: $color-primary;
+			padding: 1rem 2.5rem;
+			outline: none;
+			border: none;
+			color: $color-white;
+			border-radius: 4px;
+			width: 100%;
+			text-transform: uppercase;
+		}
+	}
+
+}
