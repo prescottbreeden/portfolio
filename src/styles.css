@@ -1292,6 +1292,9 @@ input[type="text"] {
   .about__courses {
     margin-top: 12rem; }
 
+.transparent {
+  color: transparent; }
+
 .tech {
   padding-top: 6rem;
   width: 100vw;

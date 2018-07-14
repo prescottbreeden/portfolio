@@ -2,7 +2,9 @@
 	<h2 class="tech__header">Technologies</h2>
   <ul class="grid clear">
     <li class="hex-container" *ngFor="let i of img">
-      <div class="hexagon img-{{i}}" (click)='zoom($event)'>{{i}}</div>
+      <div class="hexagon img-{{i}}" (click)='zoom($event)'>
+				<span class="transparent">{{i}}</span>
+			</div>
     </li>     
   </ul>
 	<div class="tech__details">

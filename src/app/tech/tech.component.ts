@@ -70,10 +70,7 @@ blurb = {
              features on top of it as well.`,
 
   'html5': `HTML5 is a markup language used for structuring and presenting
-            content on the web. Version 5 introduced a host of new tags, such
-            as: header, footer, article, section, svg, canvas, audio, video,
-            and many more. HTML5 also allows the use of regex inside
-            client-side form validation which can be extremely useful.`,
+            content on the web.`,
 
   'jquery': `jQuery is a cross-platform JavaScript library designed to
              simplify the client-side scripting of HTML.`,
@@ -166,8 +163,9 @@ blurb = {
   }
 
   zoom(e) {
-    // console.log(this.images[e.target.innerHTML - 1]);
-    this.zoomImg = this.images[e.target.innerHTML - 1];
+    // console.log(e);
+    // console.log(this.images[e.target.children[0].innerHTML - 1]);
+    this.zoomImg = this.images[e.target.children[0].innerHTML - 1];
     // console.log(this.blurb[this.zoomImg]);
     this.techDescription = this.blurb[this.zoomImg];
   }
