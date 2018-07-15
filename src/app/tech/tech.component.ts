@@ -130,11 +130,7 @@ blurb = {
              operating system across public and OpenStack clouds.`,
 
   'vim': `Vim is a highly configurable text editor for efficiently creating
-          and changing any kind of text directly from the CLI. Vim not only
-          makes complex movement patterns readily available at your finger-
-          tips, but in combination with its customizability alleviates common
-          repetitive strain injuries that can be caused by "hand-stretches" of
-          traditional text editors.`,
+          and changing any kind of text directly from the CLI.`,
 
   'vscode': `Visual Studio Code is a source code editor developed by Microsoft
              for Windows, Linux and macOS. It includes support for debugging,
