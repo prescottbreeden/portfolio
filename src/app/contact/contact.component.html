@@ -2,35 +2,37 @@
 	<h2 class="contact__header">Let's build something great!</h2>
 	<div class="contact__container">
 		<form class="contact__form" action="">
-			<label for="name">Your Name:</label>
+			<label for="name">Full Name</label>
 			<input 
 				id="name_fieild" 
 				class="contact__form--input" 
 				type="text" 
-				name="name">
-			<label for="email">Your Email:</label>
+				name="name"
+				placeholder="Full Name"
+				autocomplete="name">
+			<br>
+			<label for="email">Email Address</label>
 			<input 
 				id="email_field" 
 				class="contact__form--input" 
 				type="text" 
-				name="email">
+				name="email"
+				placeholder="Email Address"
+				autocomplete="email">
+			<br>
 			<label for="project">What are you interested in building?</label>
 			<textarea 
 				name="project"
-				rows="10"
-				cols="33"
 				maxlength="500"
-				wrap="hard">
-			</textarea>
+				wrap="hard"></textarea>
 				
-			<button class="contact__form--btn">Send</button>
+			<button class="contact__form--btn">Send &#9993;</button>
 		</form>
-		<ul class="contact__info">
-			<li class="contact__info--item">Email</li>
-			<li class="contact__info--item">Phone</li>
-			<li class="contact__info--item">LinkedIn</li>
-			<li class="contact__info--item">GitHub</li>
-		
-		</ul>
 	</div>
+	<ul class="contact__info">
+		<li class="contact__info--item">Email</li>
+		<li class="contact__info--item">Phone</li>
+		<li class="contact__info--item">LinkedIn</li>
+		<li class="contact__info--item">GitHub</li>
+	</ul>
 </section>

@@ -32,7 +32,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="about__courses">
+	<!--  -->
+    <div class="about__links">
+        <div class="about__link" [routerLink]="['tech']">Technology</div>
+        <div class="about__link" [routerLink]="['portfolio']">Portfolio</div>
+    </div>
+</section>
+
+<!-- <div class="hidden">
+    <div *ngFor="let i of images" class="preload-{{i}}"></div>
+</div> -->
+<!-- <div class="about__courses">
 		<h2 class="about__courses--heading">Continuing Education</h2>
 		<p class="about__courses--subheading">I've always believed that being truly great at something requires a lifetime commitment to continuing education. In this sense, continuing education is not a mark of what an individual knows, but rather their commitment to improving their craft everyday.</p>
 		<ul class="about__courses--list">
@@ -59,13 +69,4 @@
 			<li class="about__courses--item">React 16: Complete Guide with React Router 4 and Redux</li>
 			<li class="about__courses--item">Advanced React and Redux</li>
 		</ul>
-	</div>
-    <div class="about__links">
-        <div class="about__link" [routerLink]="['tech']">Technology</div>
-        <div class="about__link" [routerLink]="['portfolio']">Portfolio</div>
-    </div>
-</section>
-
-<div class="hidden">
-    <div *ngFor="let i of images" class="preload-{{i}}"></div>
-</div>
+	</div> -->

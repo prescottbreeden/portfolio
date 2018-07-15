@@ -21,22 +21,7 @@ body {
     margin: 0 auto;
 }
 
-input,
-input[type="text"] {
-    font-size: inherit;
-    font-family: inherit;
-    // padding: 1rem 1.5rem;
-    // border-radius: 4px;
-    background-color: $color-white;
-    border: none;
-    width: 100%;
-    display: inline-block;
 
-    &:focus {
-        outline: none;
-        background-color: rgba(green, .1);
-    }
-}
 
 .container {
     display: flex;
