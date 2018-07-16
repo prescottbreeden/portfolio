@@ -1,4 +1,3 @@
-@import url(~@angular/material/prebuilt-themes/indigo-pink.css);
 * {
   margin: 0;
   padding: 0; }
@@ -937,7 +936,6 @@ body {
 
 input {
   background-color: #f7f7f7;
-  width: 50%;
   padding: .8rem !important;
   display: block;
   border-radius: 4px;
@@ -949,7 +947,6 @@ input {
 
 textarea {
   padding: .8rem !important;
-  width: 50%;
   height: 10rem;
   border: none;
   border-radius: 4px;
@@ -964,36 +961,64 @@ textarea {
   padding-top: 6rem;
   background-image: linear-gradient(145deg, rgba(247, 247, 247, 0.9), rgba(247, 247, 247, 0.9)); }
   .contact__container {
+    margin: 0 auto;
+    height: 50rem;
+    width: 95%;
     display: flex;
-    justify-content: space-around;
-    padding: 3rem; }
+    padding: 2.5rem 6rem;
+    background-image: linear-gradient(65deg, transparent 40%, rgba(103, 145, 178, 0.9) 0%, rgba(74, 132, 159, 0.9) 60%), url("assets/phpcode.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.5); }
   .contact__header {
     text-align: center; }
+  .contact__form-box {
+    width: 50%; }
   .contact__form {
-    color: #f7f7f7;
-    background-image: linear-gradient(105deg, rgba(74, 132, 159, 0.9) 0%, rgba(103, 145, 178, 0.9) 50%, transparent 50%), url("assets/keyboard2.jpeg");
-    background-size: cover;
-    padding: 2.5rem 6rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 4rem;
-    border-radius: 4px;
-    box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.5);
-    width: 95%;
-    background-color: #ddd; }
+    color: #f7f7f7; }
     .contact__form--input {
       padding: .5rem;
       border-radius: 4px;
       margin-bottom: 2rem; }
+      .contact__form--input-name {
+        visibility: hidden; }
+      .contact__form--input-email {
+        visibility: hidden; }
+      .contact__form--input-project {
+        color: #ff9c67; }
+      .contact__form--input-cta {
+        margin-top: 2rem;
+        color: #ff9c67;
+        text-align: center; }
     .contact__form--btn {
-      background-color: #ff9c67;
+      background-color: #28b485;
       padding: 1rem 2.5rem;
       outline: none;
       border: none;
       color: #f7f7f7;
       border-radius: 4px;
-      width: 50%;
       box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.5);
       font-size: 2rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: all .2s; }
+      .contact__form--btn:hover {
+        background-color: #ff9c67;
+        cursor: pointer; }
+  .contact__info {
+    padding: 6rem; }
+    .contact__info--item {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .contact__icon {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 3rem; }
 
 .movie {
   animation: remove-movie-bg .5s linear 12s 1 forwards;
