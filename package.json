@@ -11,7 +11,7 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css compile:sass prefix:css compress:css",
     "watch:sass": "node-sass src/sass/main.scss src/styles.css -w",
     "compile:sass": "node-sass src/sass/main.scss src/styles.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' styles.css -o styles.prefix.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles.css -o styles.prefix.css",
     "compress:css": "node-sass styles.prefix.css styles.min.css --output-style compressed"
   },
   "private": true,

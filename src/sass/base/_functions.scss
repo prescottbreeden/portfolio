@@ -32,7 +32,7 @@ $technologies:
 $total: length($technologies);
 
 @mixin beehive-appear($wait) {
-   animation: appear 1.25s #{$wait * .1}s 1 ease-out forwards; 
+   animation: appear .25s #{$wait * .1}s 1 ease-out forwards; 
 }
 
 @for $i from 1 through $total {

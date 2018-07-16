@@ -20,6 +20,7 @@ textarea {
 	&__container {
 		margin: 0 auto;
 		width: 95%;
+		max-width: 130rem;
 		display: flex;
 		padding: 2.5rem 6rem;
 		background-image: linear-gradient(

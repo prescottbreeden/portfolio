@@ -51,8 +51,7 @@ blurb = {
              the next generation of ASP.NET, developed by Microsoft.`,
 
   'express': `Express.js, or simply Express, is a web application framework for
-              Node.js, released as free and open-source software under the MIT
-              License. It is designed for building web applications and APIs.`,
+              Node.js designed for building web applications and APIs.`,
 
   'firebase': `Firebase is a cloud-hosted NoSQL database that stores data in
                JSON format and syncs accross all clients in realtime.`,
@@ -94,9 +93,8 @@ blurb = {
              released in 1991, Python has a design philosophy that emphasizes
              code readability, notably using significant whitespace.`,
 
-  'react': `React is a JavaScript library for building user interfaces. It is
-            maintained by Facebook and a community of individual developers and
-            companies. React can be used as a base in the development of
+  'react': `React is a JavaScript library for building user interfaces.
+            React can be used as a base in the development of
             single-page or mobile applications.`,
 
   'sass': `SASS ('Syntactically Awesome Style Sheets') is a preprocessor
@@ -117,9 +115,8 @@ blurb = {
           for stream processing in a relational data stream management system.`,
 
   'sqlite': `SQLite is a relational database management system contained in a C
-             programming library. In contrast to many other database management
-             systems, SQLite is not a client–server database engine. Rather, it
-             is embedded into the end program.`,
+             programming library. SQLite is not a client–server database
+             engine and is instead embedded into the end program.`,
 
   'r': `R is a vector-based programming language and free software environment
         for statistical computing and graphics that is supported by the R

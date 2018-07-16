@@ -61,7 +61,7 @@ body {
   text-align: center !important; }
 
 .img-1 {
-  animation: appear 1.25s 0.1s 1 ease-out forwards;
+  animation: appear 0.25s 0.1s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/angular.png");
   background-size: cover;
   background-position: center;
@@ -83,7 +83,7 @@ body {
     opacity: 1; }
 
 .img-2 {
-  animation: appear 1.25s 0.2s 1 ease-out forwards;
+  animation: appear 0.25s 0.2s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/aws.png");
   background-size: cover;
   background-position: center;
@@ -105,7 +105,7 @@ body {
     opacity: 1; }
 
 .img-3 {
-  animation: appear 1.25s 0.3s 1 ease-out forwards;
+  animation: appear 0.25s 0.3s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/bootstrap.png");
   background-size: cover;
   background-position: center;
@@ -127,7 +127,7 @@ body {
     opacity: 1; }
 
 .img-4 {
-  animation: appear 1.25s 0.4s 1 ease-out forwards;
+  animation: appear 0.25s 0.4s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/csharp.png");
   background-size: cover;
   background-position: center;
@@ -149,7 +149,7 @@ body {
     opacity: 1; }
 
 .img-5 {
-  animation: appear 1.25s 0.5s 1 ease-out forwards;
+  animation: appear 0.25s 0.5s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/css3.png");
   background-size: cover;
   background-position: center;
@@ -171,7 +171,7 @@ body {
     opacity: 1; }
 
 .img-6 {
-  animation: appear 1.25s 0.6s 1 ease-out forwards;
+  animation: appear 0.25s 0.6s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/django.png");
   background-size: cover;
   background-position: center;
@@ -193,7 +193,7 @@ body {
     opacity: 1; }
 
 .img-7 {
-  animation: appear 1.25s 0.7s 1 ease-out forwards;
+  animation: appear 0.25s 0.7s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/dotnet.png");
   background-size: cover;
   background-position: center;
@@ -215,7 +215,7 @@ body {
     opacity: 1; }
 
 .img-8 {
-  animation: appear 1.25s 0.8s 1 ease-out forwards;
+  animation: appear 0.25s 0.8s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/express.png");
   background-size: cover;
   background-position: center;
@@ -237,7 +237,7 @@ body {
     opacity: 1; }
 
 .img-9 {
-  animation: appear 1.25s 0.9s 1 ease-out forwards;
+  animation: appear 0.25s 0.9s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/firebase.png");
   background-size: cover;
   background-position: center;
@@ -259,7 +259,7 @@ body {
     opacity: 1; }
 
 .img-10 {
-  animation: appear 1.25s 1s 1 ease-out forwards;
+  animation: appear 0.25s 1s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/flask.png");
   background-size: cover;
   background-position: center;
@@ -281,7 +281,7 @@ body {
     opacity: 1; }
 
 .img-11 {
-  animation: appear 1.25s 1.1s 1 ease-out forwards;
+  animation: appear 0.25s 1.1s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/git.png");
   background-size: cover;
   background-position: center;
@@ -303,7 +303,7 @@ body {
     opacity: 1; }
 
 .img-12 {
-  animation: appear 1.25s 1.2s 1 ease-out forwards;
+  animation: appear 0.25s 1.2s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/github.png");
   background-size: cover;
   background-position: center;
@@ -325,7 +325,7 @@ body {
     opacity: 1; }
 
 .img-13 {
-  animation: appear 1.25s 1.3s 1 ease-out forwards;
+  animation: appear 0.25s 1.3s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/html5.png");
   background-size: cover;
   background-position: center;
@@ -347,7 +347,7 @@ body {
     opacity: 1; }
 
 .img-14 {
-  animation: appear 1.25s 1.4s 1 ease-out forwards;
+  animation: appear 0.25s 1.4s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/jquery.png");
   background-size: cover;
   background-position: center;
@@ -369,7 +369,7 @@ body {
     opacity: 1; }
 
 .img-15 {
-  animation: appear 1.25s 1.5s 1 ease-out forwards;
+  animation: appear 0.25s 1.5s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/javascript.png");
   background-size: cover;
   background-position: center;
@@ -391,7 +391,7 @@ body {
     opacity: 1; }
 
 .img-16 {
-  animation: appear 1.25s 1.6s 1 ease-out forwards;
+  animation: appear 0.25s 1.6s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/mongodb.png");
   background-size: cover;
   background-position: center;
@@ -413,7 +413,7 @@ body {
     opacity: 1; }
 
 .img-17 {
-  animation: appear 1.25s 1.7s 1 ease-out forwards;
+  animation: appear 0.25s 1.7s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/nodejs.png");
   background-size: cover;
   background-position: center;
@@ -435,7 +435,7 @@ body {
     opacity: 1; }
 
 .img-18 {
-  animation: appear 1.25s 1.8s 1 ease-out forwards;
+  animation: appear 0.25s 1.8s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/postman.png");
   background-size: cover;
   background-position: center;
@@ -457,7 +457,7 @@ body {
     opacity: 1; }
 
 .img-19 {
-  animation: appear 1.25s 1.9s 1 ease-out forwards;
+  animation: appear 0.25s 1.9s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/python.png");
   background-size: cover;
   background-position: center;
@@ -479,7 +479,7 @@ body {
     opacity: 1; }
 
 .img-20 {
-  animation: appear 1.25s 2s 1 ease-out forwards;
+  animation: appear 0.25s 2s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/react.png");
   background-size: cover;
   background-position: center;
@@ -501,7 +501,7 @@ body {
     opacity: 1; }
 
 .img-21 {
-  animation: appear 1.25s 2.1s 1 ease-out forwards;
+  animation: appear 0.25s 2.1s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/sass.png");
   background-size: cover;
   background-position: center;
@@ -523,7 +523,7 @@ body {
     opacity: 1; }
 
 .img-22 {
-  animation: appear 1.25s 2.2s 1 ease-out forwards;
+  animation: appear 0.25s 2.2s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/scikit-learn.png");
   background-size: cover;
   background-position: center;
@@ -545,7 +545,7 @@ body {
     opacity: 1; }
 
 .img-23 {
-  animation: appear 1.25s 2.3s 1 ease-out forwards;
+  animation: appear 0.25s 2.3s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/sql.png");
   background-size: cover;
   background-position: center;
@@ -567,7 +567,7 @@ body {
     opacity: 1; }
 
 .img-24 {
-  animation: appear 1.25s 2.4s 1 ease-out forwards;
+  animation: appear 0.25s 2.4s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/sqlite.png");
   background-size: cover;
   background-position: center;
@@ -589,7 +589,7 @@ body {
     opacity: 1; }
 
 .img-25 {
-  animation: appear 1.25s 2.5s 1 ease-out forwards;
+  animation: appear 0.25s 2.5s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/r.png");
   background-size: cover;
   background-position: center;
@@ -611,7 +611,7 @@ body {
     opacity: 1; }
 
 .img-26 {
-  animation: appear 1.25s 2.6s 1 ease-out forwards;
+  animation: appear 0.25s 2.6s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/ubuntu.png");
   background-size: cover;
   background-position: center;
@@ -633,7 +633,7 @@ body {
     opacity: 1; }
 
 .img-27 {
-  animation: appear 1.25s 2.7s 1 ease-out forwards;
+  animation: appear 0.25s 2.7s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/vim.png");
   background-size: cover;
   background-position: center;
@@ -655,7 +655,7 @@ body {
     opacity: 1; }
 
 .img-28 {
-  animation: appear 1.25s 2.8s 1 ease-out forwards;
+  animation: appear 0.25s 2.8s 1 ease-out forwards;
   background-image: linear-gradient(to bottom, rgba(255, 156, 103, 0), rgba(255, 156, 103, 0)), url("assets/logos/vscode.png");
   background-size: cover;
   background-position: center;
@@ -943,6 +943,7 @@ input:focus {
   .contact__container {
     margin: 0 auto;
     width: 95%;
+    max-width: 130rem;
     display: flex;
     padding: 2.5rem 6rem;
     background-image: linear-gradient(65deg, transparent 40%, rgba(103, 145, 178, 0.9) 0%, rgba(74, 132, 159, 0.9) 60%), url("assets/phpcode.jpeg");
@@ -1069,8 +1070,10 @@ input:focus {
   object-fit: contain; }
 
 .portfolio {
-  min-height: 50vh;
+  padding-top: 6rem;
   background-color: #f7f7f7; }
+  .portfolio__header {
+    text-align: center; }
 
 .divider {
   margin: 3rem auto 0 auto;
@@ -1090,6 +1093,19 @@ input:focus {
     text-align: center; }
     .project__description--header {
       padding: 3rem; }
+    .project__description--link {
+      margin-top: 4rem;
+      transition: all .2s; }
+      .project__description--link a {
+        padding: .3rem;
+        color: #4A849F;
+        text-decoration: none;
+        border-bottom: 3px dashed #4A849F;
+        letter-spacing: 1px;
+        font-weight: 700; }
+        .project__description--link a:hover {
+          background-color: rgba(74, 132, 159, 0.5);
+          color: #f7f7f7; }
   .project__tech {
     flex: 1 1 10%; }
     .project__tech--list {

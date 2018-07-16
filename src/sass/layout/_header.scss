@@ -11,6 +11,10 @@
     background-attachment: fixed;
     position: relative;
 
+    // @media only screen and (max-width: 600px) {
+    //     background-size: contain;
+    // }
+
     &__logo {
         position: relative;
 
