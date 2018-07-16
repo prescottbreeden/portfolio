@@ -963,7 +963,7 @@ input:focus {
   .contact__icon {
     height: 5rem;
     width: 5rem;
-    margin-right: 3rem; }
+    margin: 2rem; }
     .contact__icon:hover {
       fill: #4A849F;
       cursor: pointer; }
