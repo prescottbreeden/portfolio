@@ -2,36 +2,47 @@
 	<h2 class="contact__header">Let's build something great!</h2>
 	<div class="contact__container">
 		<div class="contact__form-box"></div>
-		<form class="contact__form" action="">
-			<label 
-				for="name"
-				class="contact__form--input-name">Full Name</label>
-			<input 
-				id="name_fieild" 
-				class="contact__form--input" 
-				type="text" 
-				name="name"
-				placeholder="Full Name"
-				autocomplete="name">
-			<label for="email"
-			class="contact__form--input-email">Email Address</label>
-			<input 
-				id="email_field" 
-				class="contact__form--input" 
-				type="text" 
-				name="email"
-				placeholder="Email Address"
-				autocomplete="email">
-			<p class="contact__form--input-project">
+		<form class="form" action="">
+			<div class="form__group">
+				<input 
+					class="form__input" 
+					id="name_fieild" 
+					type="text" 
+					name="name"
+					placeholder="Full Name"
+					autocomplete="name">
+				<label 
+					for="name"
+					class="form__label">
+					Full Name
+				</label>
+			</div>
+			<div class="form__group">
+				<input 
+					class="form__input" 
+					id="email_field" 
+					type="email" 
+					name="email"
+					placeholder="Email Address"
+					autocomplete="email">
+				<label 
+					for="email"
+					class="form__label">
+					Email Address
+				</label>
+			</div>
+			<div class="form__group">
+			<p class="form__textarea-label">
 				Got an idea for a project?</p>
 				
 			<textarea 
 				name="project"
 				maxlength="500"
-				wrap="hard"></textarea>
-				
-			<button class="contact__form--btn">Send &#9993;</button>
-			<p class="contact__form--input-cta">Send me a message and let's chat!</p>
+				wrap="hard"
+				class="form__textarea"></textarea>
+			</div>	
+			<button class="form__btn">Send &#9993;</button>
+			<p class="form__cta">Send me a message and let's chat!</p>
 		</form>
 	</div>
 	<ul class="contact__info">

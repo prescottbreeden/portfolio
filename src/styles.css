@@ -934,35 +934,14 @@ body {
     -o-object-fit: cover;
     object-fit: cover; }
 
-input {
-  background-color: #f7f7f7;
-  padding: .8rem !important;
-  display: block;
-  border-radius: 4px;
-  border: none;
-  font-size: 2rem;
-  font-family: inherit; }
-  input:focus {
-    outline: none; }
-
-textarea {
-  padding: .8rem !important;
-  height: 10rem;
-  border: none;
-  border-radius: 4px;
-  display: block;
-  font-size: 2rem;
-  font-family: inherit;
-  margin-bottom: 2rem; }
-  textarea:focus {
-    outline: none; }
+input:focus {
+  outline: none; }
 
 .contact {
   padding-top: 6rem;
   background-image: linear-gradient(145deg, rgba(247, 247, 247, 0.9), rgba(247, 247, 247, 0.9)); }
   .contact__container {
     margin: 0 auto;
-    height: 50rem;
     width: 95%;
     display: flex;
     padding: 2.5rem 6rem;
@@ -974,40 +953,6 @@ textarea {
     text-align: center; }
   .contact__form-box {
     width: 50%; }
-  .contact__form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 4rem;
-    color: #f7f7f7; }
-    .contact__form--input {
-      padding: .5rem;
-      border-radius: 4px;
-      margin-bottom: 2rem; }
-      .contact__form--input-name {
-        visibility: hidden; }
-      .contact__form--input-email {
-        visibility: hidden; }
-      .contact__form--input-project {
-        color: #ff9c67; }
-      .contact__form--input-cta {
-        margin-top: 2rem;
-        color: #ff9c67;
-        text-align: center; }
-    .contact__form--btn {
-      background-color: #28b485;
-      padding: 1rem 2.5rem;
-      outline: none;
-      border: none;
-      color: #f7f7f7;
-      border-radius: 4px;
-      box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.5);
-      font-size: 2rem;
-      text-transform: uppercase;
-      transition: all .2s; }
-      .contact__form--btn:hover {
-        background-color: #ff9c67;
-        cursor: pointer; }
   .contact__info {
     padding: 6rem; }
     .contact__info--item {
@@ -1019,6 +964,95 @@ textarea {
     height: 5rem;
     width: 5rem;
     margin-right: 3rem; }
+    .contact__icon:hover {
+      fill: #4A849F;
+      cursor: pointer; }
+
+.form {
+  margin-top: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+  color: #f7f7f7; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__input {
+    font-size: 2rem;
+    font-family: inherit;
+    color: #222;
+    padding: .5rem;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    border: none;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s; }
+    .form__input::-webkit-input-placeholder {
+      color: #333; }
+    .form__input:focus {
+      outline: none;
+      background-color: rgba(247, 247, 247, 0.9);
+      box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.1);
+      border-bottom: 4px solid #28b485;
+      transform: scale(1.05); }
+    .form__input:focus:invalid {
+      border-bottom: 4px solid #D50000; }
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: .5rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4rem); }
+  .form__textarea {
+    height: 15rem;
+    width: 90%;
+    font-family: inherit;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: .8rem;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    transition: all .3s; }
+    .form__textarea:focus {
+      outline: none;
+      background-color: rgba(247, 247, 247, 0.9);
+      box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.1);
+      border-bottom: 5px solid #28b485;
+      transform: scale(1.1); }
+    .form__textarea-label {
+      color: #ff9c67;
+      margin-bottom: .5rem; }
+  .form__cta {
+    margin-top: 2rem;
+    color: #ff9c67;
+    text-align: center; }
+  .form__btn {
+    background-color: #28b485;
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    color: #f7f7f7;
+    border-radius: 4px;
+    width: 90%;
+    box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.5);
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all .2s; }
+    .form__btn:hover {
+      background-color: #ff9c67;
+      cursor: pointer; }
+    .form__btn:active {
+      transform: translateY(2px);
+      box-shadow: none; }
 
 .movie {
   animation: remove-movie-bg .5s linear 12s 1 forwards;
