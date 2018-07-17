@@ -1087,35 +1087,49 @@ input:focus {
     display: flex;
     margin-bottom: 4rem; }
   .about__heading {
-    flex: 2 20%; }
+    flex: 3 20%; }
   .about__blurb {
-    flex: 5 50%;
+    flex: 5 40%;
     hyphens: manual; }
-  .about__links {
-    display: flex;
-    justify-content: center; }
-  .about__link {
-    padding: 1rem 3rem;
-    border: 2px solid #4A849F;
-    border-radius: 10px;
-    transition: all .2s;
-    box-shadow: 0 1rem 2.5rem rgba(34, 34, 34, 0.1); }
-    .about__link:not(:last-child) {
-      margin-right: 10rem; }
-    .about__link:hover {
-      background-color: #4A849F;
-      color: #f7f7f7;
-      cursor: pointer; }
-  .about__services {
-    margin-top: 12rem; }
-    .about__services--container {
-      margin-top: 4rem;
-      display: flex;
-      justify-content: space-around; }
-    .about__services--list {
-      list-style: none; }
   .about__courses {
     margin-top: 12rem; }
+
+.services {
+  padding: 3rem 5rem;
+  background-image: url("assets/building.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .services--heading {
+    color: #f7f7f7; }
+  .services--container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .services--list {
+    list-style: none; }
+  .services--front-end {
+    display: flex;
+    align-items: center; }
+  .services--backend {
+    display: flex;
+    align-items: center; }
+  .services--db {
+    display: flex;
+    align-items: center; }
+
+.wrapper h3 {
+  display: inline-block;
+  width: 12rem;
+  margin-left: 2.2rem;
+  text-align: center; }
+
+.cube__img {
+  height: 15rem;
+  width: auto;
+  margin: 2rem; }
 
 .transparent {
   color: transparent; }

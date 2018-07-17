@@ -1,73 +1,102 @@
-<section class="about" id="about">
+<div class="about" id="about">
 	<h2 class="u-center">Welcome!</h2>
 	<div class="about__text-box">
         <h2 class="about__heading">About Me</h2>
-        <p class="about__blurb">I'm a full-stack software developer with a background in the arts and sciences. As a former opera singer, then CEO and then neuro&shy;scientist, the one consistency across all realms was the need for newer and better tech to drive innovation. I love to think big and have a passion for tackling challenges to find elegant solutions that are clean, efficient and reusable.</p>
-    </div>
-	<div class="about__services">
-		<h2 class="about__services--heading">What I Do</h2>
-		<div class="about__services--container">
-			<div class="about__services--front-end">
-				<h3>Front End</h3>
-				<ul class="about__services--list">
-					<li>Responsive Layouts</li>
-					<li>Mobile Scaling</li>
-					<li>Animations</li>
-				</ul>
+        <p class="about__blurb">I'm a full-stack software developer with a 
+			background in the arts and sciences. As a former opera singer, then
+			CEO and then neuro&shy;scientist, the one consistency across all
+			realms was the need for newer and better tech to drive innovation. 
+			I love to think big and have a passion for tackling challenges to 
+			find elegant solutions that are clean, efficient and reusable.</p>
+	</div>
+</div>
+<div class="services">
+	<h2 class="services--heading">What I Do</h2>
+	<div class="services--container">
+		<div class="empty-space">
+			<!-- empty -->
+		</div>
+		<div class="wrapper">
+			<h3>Front End</h3>
+			<div class="services--front-end">
+				<div class="cube__container">
+					<img 
+					class="cube__img"
+					src="assets/cube_primary.png" 
+					alt="blue cube">
+				</div>	
+				<div class="cube__text">
+					<ul class="services--list">
+						<li>Responsive Layouts</li>
+						<li>Mobile Scaling</li>
+						<li>Animations</li>
+					</ul>
+				</div>
 			</div>
-			<div class="about__services--backend">
-				<h3>Back End</h3>
-				<ul class="about__services--list">
-					<li>MVC Architecture</li>
-					<li>Restful API Design</li>
-					<li>Object Relational Mapping</li>
-				</ul>
+			<h3>Back End</h3>
+			<div class="services--backend">
+				<div class="cube__container">
+					<img 
+					class="cube__img"
+					src="assets/cube_red.png" 
+					alt="blue cube">
+				</div>
+				<div class="cube__text">
+					<ul class="services--list">
+						<li>MVC Architecture</li>
+						<li>Restful API Design</li>
+						<li>Object Relational Mapping</li>
+					</ul>
+				</div>
 			</div>
-			<div class="about__services--db">
-				<h3>Databases</h3>
-				<ul class="about__services--list">
-					<li>Database Design</li>
-					<li>SQL Databases</li>
-					<li>NoSQL Databases</li>
-				</ul>
+			<h3>Databases</h3>
+			<div class="services--db">
+				<div class="cube__container">
+					<img 
+					class="cube__img"
+					src="assets/cube_teal.png" 
+					alt="blue cube">
+				</div>
+				<div class="cube__text">
+					<ul class="services--list">
+						<li>Database Design</li>
+						<li>SQL Databases</li>
+						<li>NoSQL Databases</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-	<!--  -->
-    <div class="about__links">
-        <div class="about__link" [routerLink]="['tech']">Technology</div>
-        <div class="about__link" [routerLink]="['portfolio']">Portfolio</div>
-    </div>
-</section>
+</div>
 
 <!-- <div class="hidden">
-    <div *ngFor="let i of images" class="preload-{{i}}"></div>
+<div *ngFor="let i of images" class="preload-{{i}}"></div>
 </div> -->
 <!-- <div class="about__courses">
-		<h2 class="about__courses--heading">Continuing Education</h2>
-		<p class="about__courses--subheading">I've always believed that being truly great at something requires a lifetime commitment to continuing education. In this sense, continuing education is not a mark of what an individual knows, but rather their commitment to improving their craft everyday.</p>
-		<ul class="about__courses--list">
-			<li class="about__courses--item">Coding Dojo: Coding Bootcamp</li>
-			<li class="about__courses--item">The Modern Python 3 Bootcamp</li>
-			<li class="about__courses--item">Advanced CSS and SASS</li>
-			<li class="about__courses--item">The Ultimate MySQL Bootcamp</li>
-			<li class="about__courses--item">Machine Learning: Python & R In Data Science</li>
-			<li class="about__courses--item">R Programming: R for Data Science</li>
-			<li class="about__courses--item">R Programming: Advanced R for Data Science</li>
-			<li class="about__courses--item">Data Science, Deep Learning & Machine Learning</li>
-			<li class="about__courses--item">The Complete Angular Course</li>
-			<li class="about__courses--item">Angular & NodeJS: The MEAN Stack Guide</li>
-			<li class="about__courses--item">C# Basics: Fundamentals</li>
-			<li class="about__courses--item">C# Intermediate: Classes, Interfaces, and OOP</li>
-			<li class="about__courses--item">C# Advanced: LINQ, Exception Handing and More</li>
-			<li class="about__courses--item">Angular 6: Complete Guide</li>
-			<li class="about__courses--item">Redux in Angular</li>
-			<li class="about__courses--item">Web Developer Bootcamp</li>
-			<li class="about__courses--item">Advanced Web Developer Bootcamp</li>
-			<li class="about__courses--item">Linux Tutorials and Projects</li>
-			<li class="about__courses--item">Vim Masterclass</li>
-			<li class="about__courses--item">Linux Shell Scripting</li>
-			<li class="about__courses--item">React 16: Complete Guide with React Router 4 and Redux</li>
-			<li class="about__courses--item">Advanced React and Redux</li>
-		</ul>
-	</div> -->
+	<h2 class="about__courses--heading">Continuing Education</h2>
+	<p class="about__courses--subheading">I've always believed that being truly great at something requires a lifetime commitment to continuing education. In this sense, continuing education is not a mark of what an individual knows, but rather their commitment to improving their craft everyday.</p>
+	<ul class="about__courses--list">
+		<li class="about__courses--item">Coding Dojo: Coding Bootcamp</li>
+		<li class="about__courses--item">The Modern Python 3 Bootcamp</li>
+		<li class="about__courses--item">Advanced CSS and SASS</li>
+		<li class="about__courses--item">The Ultimate MySQL Bootcamp</li>
+		<li class="about__courses--item">Machine Learning: Python & R In Data Science</li>
+		<li class="about__courses--item">R Programming: R for Data Science</li>
+		<li class="about__courses--item">R Programming: Advanced R for Data Science</li>
+		<li class="about__courses--item">Data Science, Deep Learning & Machine Learning</li>
+		<li class="about__courses--item">The Complete Angular Course</li>
+		<li class="about__courses--item">Angular & NodeJS: The MEAN Stack Guide</li>
+		<li class="about__courses--item">C# Basics: Fundamentals</li>
+		<li class="about__courses--item">C# Intermediate: Classes, Interfaces, and OOP</li>
+		<li class="about__courses--item">C# Advanced: LINQ, Exception Handing and More</li>
+		<li class="about__courses--item">Angular 6: Complete Guide</li>
+		<li class="about__courses--item">Redux in Angular</li>
+		<li class="about__courses--item">Web Developer Bootcamp</li>
+		<li class="about__courses--item">Advanced Web Developer Bootcamp</li>
+		<li class="about__courses--item">Linux Tutorials and Projects</li>
+		<li class="about__courses--item">Vim Masterclass</li>
+		<li class="about__courses--item">Linux Shell Scripting</li>
+		<li class="about__courses--item">React 16: Complete Guide with React Router 4 and Redux</li>
+		<li class="about__courses--item">Advanced React and Redux</li>
+	</ul>
+</div> -->
