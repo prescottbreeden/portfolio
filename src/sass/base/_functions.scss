@@ -1,33 +1,33 @@
 $technologies: 
-    "angular", 
-    "aws",
-    "bootstrap",
-    "csharp",
-    "css3", 
-    "django", 
-    "dotnet", 
-    "express",
-    "firebase",
-    "flask",
-    "git",
-    "github",
-    "html5",
-    "jquery",
-    "javascript",
-    "mongodb", 
-    "nodejs",
-    "postman",
-    "python", 
-    "react", 
-    "sass",
-    "scikit-learn",
-    "sql",
-    "sqlite",
-    "r",
-    "ubuntu",
-    "vim",
-    "vscode",
-    ;
+'flask',
+'python', 
+'sass',
+'aws',
+'jquery',
+'ubuntu',
+'bootstrap',
+'csharp',
+'django',
+'dotnet', 
+'r',
+'postman',
+'nginx',
+'html5',
+'git',
+'sql',
+'nodejs',
+'express',
+'angular', 
+'mongodb', 
+'github',
+'css3', 
+'javascript',
+'vscode',
+'vim',
+'firebase',
+'react', 
+'sqlite',
+;
 
 $total: length($technologies);
 
@@ -73,9 +73,9 @@ $total: length($technologies);
     }
 }
 
-@for $i from 1 through $total {
-    .preload-#{$i} { 
-        background-image: url('assets/logos/#{nth($technologies, $i)}.png');
-    }
-}
+// @for $i from 1 through $total {
+//     .preload-#{$i} { 
+//         background-image: url('assets/logos/#{nth($technologies, $i)}.png');
+//     }
+// }
 

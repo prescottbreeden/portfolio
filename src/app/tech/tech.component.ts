@@ -7,13 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechComponent implements OnInit {
 techDescription = '';
-zoomImg = 'python';
+zoomImg = '';
 img = [];
 total_images = 28;
-images = ['angular', 'aws', 'bootstrap', 'csharp', 'css3', 'django', 'dotnet',
-  'express', 'firebase', 'flask', 'git', 'github', 'html5', 'jquery',
-  'javascript', 'mongodb', 'nodejs', 'postman', 'python', 'react', 'sass',
-  'scikit-learn', 'sql', 'sqlite', 'r', 'ubuntu', 'vim', 'vscode'];
+images = [
+  'flask',
+  'python',
+  'sass',
+  'aws',
+  'jquery',
+  'ubuntu',
+  'bootstrap',
+  'csharp',
+  'django',
+  'dotnet',
+  'r',
+  'postman',
+  'nginx',
+  'html5',
+  'git',
+  'sql',
+  'nodejs',
+  'express',
+  'angular',
+  'mongodb',
+  'github',
+  'css3',
+  'javascript',
+  'vscode',
+  'vim',
+  'firebase',
+  'react',
+  'sqlite'
+];
 
 blurb = {
 
@@ -35,17 +61,13 @@ blurb = {
              typing, imperative, declarative, functional, generic,
              object-oriented, and component-oriented prgramming disciplines.`,
 
-  'css3': `CSS3 is the latest evolution of the Cascading Style Sheets language
-           and aims at extending CSS2.1. It brings a lot of long-awaited
-           novelties, like rounded corners, shadows, gradients, transitions or
-           animations, as well as new layouts like multi-columns, flexible box
-           or grid layouts`,
+  'css3': `CSS3 is the latest evolution of the Cascading Style Sheets language.
+           It brings a lot of long-awaited novelties, like rounded corners,
+           shadows, gradients, transitions or animations, as well as new
+           layouts like multi-columns, flexible box or grid layouts`,
 
   'django': `Django is a high-level Python Web framework that encourages rapid
-             development and clean, pragmatic design. Built by experienced
-             developers, it takes care of much of the hassle of Web development,
-             so you can focus on writing your app without needing to reinvent
-             the wheel. It’s free and open source.`,
+             development and clean, pragmatic design.`,
 
   'dotnet': `ASP.NET Core is a free and open-source modular web framework, and
              the next generation of ASP.NET, developed by Microsoft.`,
@@ -82,6 +104,9 @@ blurb = {
               document-oriented database program. Classified as a NoSQL
               database program, MongoDB uses JSON-like documents with schemas.`,
 
+  'nginx': `Nginx (ph: "engine-x") is a web server which can also be used as a
+            reverse proxy, load balancer, mail proxy, and HTTP cache.`,
+
   'nodejs': `Node.js is an open-source, cross-platform JavaScript run
              environment that executes JavaScript code outside the browser.`,
 
@@ -100,15 +125,7 @@ blurb = {
   'sass': `SASS ('Syntactically Awesome Style Sheets') is a preprocessor
            scripting language that is interpreted or compiled into Cascading
            Style Sheets (CSS) and adds a number of progromatic features like
-           functions, mixins, variables, and more to make writing CSS easier
-           whether you are working solo or with a large team.`,
-
-  'scikit-learn': `Scikit-learn is a free software machine learning library for
-                   the Python programming language. It features various
-                   classification, regression and clustering algorithms
-                   including support vector machines, random forests, gradient
-                   boosting, k-means and DBSCAN interoperating with NumPy and
-                   SciPy libraries.`,
+           functions, mixins, variables, and more to make writing CSS easier.`,
 
   'sql': `SQL is a domain-specific language used in programming and designed
           for managing data held in a relational database management system, or
@@ -147,12 +164,12 @@ blurb = {
       this.img.push(i);
     }
 
-    for (let i = 0; i < this.img.length; i++) {
-      const swap = Math.floor(Math.random() * (i + 1));
-      const temp = this.img[i];
-      this.img[i] = this.img[swap];
-      this.img[swap] = temp;
-    }
+    // for (let i = 0; i < this.img.length; i++) {
+    //   const swap = Math.floor(Math.random() * (i + 1));
+    //   const temp = this.img[i];
+    //   this.img[i] = this.img[swap];
+    //   this.img[swap] = temp;
+    // }
   }
 
   zoom(e) {

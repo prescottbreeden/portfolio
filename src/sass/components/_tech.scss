@@ -17,12 +17,12 @@
 
 
 	&__details {
-        margin-top: 3rem;
         padding: 3rem 0;
         background-color: $color-white;
-
+        
         &--container {
-            margin-top: 2rem;
+            max-width: 100rem;
+            margin: 0 auto;
             display: flex;
             justify-content: space-around;
     
@@ -32,8 +32,8 @@
     &__logo-box {
         margin-left: 15rem;
         margin-right: 5rem;
-        height: 15rem;
-        width: 15rem;
+        height: 12rem;
+        width: 12rem;
         position: relative;
         border: 1px solid $color-black;
 
